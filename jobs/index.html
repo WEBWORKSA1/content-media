@@ -1,0 +1,82 @@
+---
+layout: "default"
+title: "Creator Economy Jobs — Content, Video, Newsletter & SEO Roles | Content.Media"
+description: "Curated content, video, newsletter and SEO jobs. Every listing shows a salary range."
+canonical: "/jobs/"
+head_extra: ""
+body_extra: ""
+---
+{% raw %}<section class="band">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page"><span>Jobs</span></li></ol></nav><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://content.media/"},{"@type":"ListItem","position":2,"name":"Jobs","item":"https://content.media/jobs/"}]}</script>
+<h1>Creator economy jobs</h1>
+<p class="lede">Content, video, newsletter and SEO roles at companies that take content
+seriously. Every listing shows a salary range — postings without one are not accepted.</p>
+<div class="dir-toolbar">
+<input type="search" id="jobSearch" placeholder="Search roles, companies, locations…" aria-label="Search jobs">
+<a class="btn btn--primary" href="/jobs/post/">Post a job — $149</a>
+</div>
+<!-- ad slot: leaderboard (leaderboard) — set ADS['publisher'] in _src/config.py -->
+<div class="grid" id="jobList" style="gap:.7rem"><div class="panel">
+<h3 class="mt0">The board opens with its first posting</h3>
+<p class="muted">We are not filling this page with scraped listings or roles we cannot verify.
+Every posting here will be one a real employer paid to place, with a published salary range and
+a working application link.</p>
+<p><a class="btn btn--primary" href="/jobs/post/">Post the first role</a>
+<a class="btn btn--ghost" href="/newsletter/">Get roles by email instead</a></p>
+</div></div>
+<p class="small muted" style="margin-top:1.2rem">Listings refresh weekly. Hiring?
+<a href="/jobs/post/">Post a role</a> — 30 days, newsletter inclusion, no agency spam.</p>
+</div>
+</section>
+<section class="band band--alt"><div class="wrap">
+<section class="newsletter newsletter--wide" id="newsletter">
+<div class="newsletter__copy">
+<span class="eyebrow">Free weekly</span>
+<h2>Jobs in your inbox</h2>
+<p>New roles every Tuesday alongside the benchmark brief. No recruiter spam, ever.</p>
+</div>
+<form class="cm-form newsletter__form" data-form="newsletter" novalidate>
+<label class="sr-only" for="nl-email-wide">Email address</label>
+<input id="nl-email-wide" name="email" type="email" required
+placeholder="you@company.com" autocomplete="email">
+<label class="sr-only" for="nl-role-wide">I am a…</label>
+<select id="nl-role-wide" name="role" required>
+<option value="">I am a…</option>
+<option>Creator / channel owner</option>
+<option>Publisher / media owner</option>
+<option>Brand or in-house marketer</option>
+<option>Agency / freelancer</option>
+<option>Investor / analyst</option>
+</select>
+<button class="btn btn--primary btn--block" type="submit">Send me the brief</button>
+<label class="checkline">
+<input type="checkbox" name="consent" value="yes" required>
+<span>Email me the weekly brief and the rate card database. I can unsubscribe any time.</span>
+</label>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</section>
+</div></section>
+<section class="cta-band">
+<div class="wrap cta-band__inner">
+<div>
+<h2>Hiring a whole content function?</h2>
+<p>Sometimes a retainer beats a headcount. We will tell you honestly which one you need.</p>
+</div>
+<div class="cta-band__actions">
+<a class="btn btn--primary btn--lg" href="/services/#quote">Talk to us</a>
+<a class="btn btn--ghost btn--lg" href="/jobs/post/">Post a job instead</a>
+</div>
+</div>
+</section>
+<script>
+(function(){
+var s=document.getElementById('jobSearch'),rows=[].slice.call(document.querySelectorAll('#jobList .job-row'));
+if(!s)return;
+s.addEventListener('input',function(){
+var q=s.value.toLowerCase();
+rows.forEach(function(r){r.style.display=r.textContent.toLowerCase().indexOf(q)>-1?'':'none';});
+});
+})();
+</script>{% endraw %}
