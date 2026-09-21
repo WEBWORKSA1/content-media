@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /services/thank-you/
+Disallow: /newsletter/thank-you/
+Disallow: /search/
+
+Sitemap: https://content.media/sitemap.xml
