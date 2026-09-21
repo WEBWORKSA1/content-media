@@ -1,0 +1,143 @@
+---
+layout: "default"
+title: "Creator Rate Card Calculator — Price Sponsorships With Usage Rights"
+description: "Build a defensible sponsorship rate card across 11 deliverable types, with niche, engagement, usage rights and exclusivity priced in."
+canonical: "/tools/creator-rate-card-calculator/"
+head_extra: "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebApplication\",\"name\":\"Creator rate card builder\",\"url\":\"https://content.media/tools/creator-rate-card-calculator/\",\"applicationCategory\":\"BusinessApplication\",\"operatingSystem\":\"Any\",\"description\":\"Build a defensible sponsorship rate card across 11 deliverable types, with niche, engagement, usage rights and exclusivity priced in.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Content.Media\"}}</script>"
+body_extra: ""
+---
+{% raw %}<section class="band" style="padding-bottom:1.5rem">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/tools/">Free tools</a></li><li aria-current="page"><span>Creator rate card builder</span></li></ol></nav><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://content.media/"},{"@type":"ListItem","position":2,"name":"Free tools","item":"https://content.media/tools/"},{"@type":"ListItem","position":3,"name":"Creator rate card builder","item":"https://content.media/tools/creator-rate-card-calculator/"}]}</script>
+<h1>Creator rate card builder</h1>
+<p class="lede">Most creators price a post and give away the two things worth the most money: paid usage rights and category exclusivity. This builder prices them explicitly, so you can see exactly what you are handing over when a brand asks for 'perpetual usage'.</p>
+<div class="byline">
+<div class="byline-av" aria-hidden="true">CM</div>
+<div>
+<p class="byline-name">The Content.Media research desk</p>
+<p class="byline-meta">Reviewed by Editorial board &middot; Updated September 2026 &middot;
+<a href="/editorial-policy/">How we research</a></p>
+</div>
+</div>
+<div class="calc" data-calc="ratecard">
+<div class="calc-head">
+<h2 style="font-size:1rem">Creator rate card builder</h2>
+<div class="chipset">
+<button class="chip" type="button" data-reset>Reset</button>
+<button class="chip" type="button" data-copy="[data-out]">Copy result</button>
+<button class="chip" type="button" data-share>Share</button>
+</div>
+</div>
+<div class="calc-body">
+<div class="calc-inputs"><div class="calc-row"><label for="creator-rate-card-calculator-followers">Followers / subscribers on the platform<output class="val" data-for="followers" data-suffix=""></output></label><input id="creator-rate-card-calculator-followers" name="followers" type="range" min="500" max="20000000" step="500" value="40000" data-def="40000"></div><div class="calc-row"><label for="creator-rate-card-calculator-asset">Deliverable</label><select id="creator-rate-card-calculator-asset" name="asset" data-def="youtube_integration"><option value="instagram_reel">Instagram Reel</option><option value="instagram_post">Instagram in-feed post</option><option value="instagram_story">Instagram Story frame</option><option value="tiktok_video">TikTok video</option><option value="youtube_integration" selected>YouTube integration (60–90s)</option><option value="youtube_dedicated">YouTube dedicated video</option><option value="youtube_short">YouTube Short</option><option value="x_post">X / Twitter post</option><option value="linkedin_post">LinkedIn post</option><option value="newsletter_slot">Newsletter primary slot</option><option value="podcast_midroll">Podcast mid-roll</option></select></div><div class="calc-row"><label for="creator-rate-card-calculator-quantity">Number of deliverables<output class="val" data-for="quantity" data-suffix=""></output></label><input id="creator-rate-card-calculator-quantity" name="quantity" type="range" min="1" max="20" step="1" value="1" data-def="1"></div><div class="calc-row"><label for="creator-rate-card-calculator-engagement">Your engagement rate (%)<output class="val" data-for="engagement" data-suffix=""></output></label><input id="creator-rate-card-calculator-engagement" name="engagement" type="range" min="0.2" max="25" step="0.1" value="4.0" data-def="4.0"></div><div class="calc-row"><label for="creator-rate-card-calculator-niche">Niche</label><select id="creator-rate-card-calculator-niche" name="niche" data-def="generic"><option value="generic" selected>General / lifestyle</option><option value="b2b">B2B / professional</option><option value="finance">Finance</option><option value="tech">Technology</option><option value="beauty">Beauty</option><option value="gaming">Gaming</option><option value="entertainment">Entertainment</option></select></div><div class="calc-row"><label for="creator-rate-card-calculator-usage">Paid usage rights</label><select id="creator-rate-card-calculator-usage" name="usage" data-def="organic"><option value="organic" selected>Organic only — no paid amplification</option><option value="whitelist_30d">Whitelisting / paid ads, 30 days</option><option value="whitelist_90d">Whitelisting / paid ads, 90 days</option><option value="perpetual">Perpetual, all channels</option></select></div><div class="calc-row"><label for="creator-rate-card-calculator-exclusivity">Category exclusivity</label><select id="creator-rate-card-calculator-exclusivity" name="exclusivity" data-def="none"><option value="none" selected>None</option><option value="cat_30d">Category exclusive, 30 days</option><option value="cat_90d">Category exclusive, 90 days</option><option value="cat_1y">Category exclusive, 12 months</option></select></div>
+<p class="calc-note">Nothing you type is sent anywhere. Everything runs in your browser.</p>
+</div>
+<div class="calc-output" data-out></div>
+</div>
+</div>
+<!-- ad slot: tool_result (leaderboard) — set ADS['publisher'] in _src/config.py -->
+</div>
+</section>
+<section class="band" style="padding-top:0">
+<div class="wrap article-layout">
+<article class="prose">
+<h2 id="formula">The pricing model</h2><div class="code">base = (followers ÷ 1000) × asset_rate
+rate = base × niche_mod × usage_mod × exclusivity_mod × engagement_mod × quantity
+      (−12% when quantity ≥ 3)</div><h2 id="multipliers">The multipliers that actually matter</h2>
+<table>
+<thead><tr><th>Lever</th><th>Multiplier</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>B2B / professional niche</td><td>×1.55</td><td>Higher customer value behind every impression</td></tr>
+<tr><td>Finance niche</td><td>×1.60</td><td>Highest advertiser competition of any category</td></tr>
+<tr><td>Paid usage, 30 days</td><td>×1.35</td><td>Your face becomes their ad creative</td></tr>
+<tr><td>Paid usage, 90 days</td><td>×1.60</td><td>A quarter of paid media off your likeness</td></tr>
+<tr><td>Perpetual usage</td><td>×2.10</td><td>Never grant this inside a base fee. Ever.</td></tr>
+<tr><td>Category exclusivity, 12 months</td><td>×1.80</td><td>You are declining every competitor for a year</td></tr>
+</tbody></table>
+<h2 id="negotiation">How to send it</h2>
+<ol>
+<li><strong>Send the high end.</strong> Buyers expect to negotiate 10–25% off the opening number. Anchor accordingly.</li>
+<li><strong>Itemise the rights.</strong> Show the base fee and the usage fee as separate lines, so removing the rights removes the cost rather than the deal.</li>
+<li><strong>Put a floor in writing for yourself.</strong> The result prints a walk-away number at 80% of the low end. Below that, decline — a cheap deal sets your price for every future buyer in that category.</li>
+<li><strong>Charge for the second and third round of revisions.</strong> Two included, then hourly.</li>
+<li><strong>Net 30, 50% up front for anything over $5,000.</strong> Non-negotiable with new clients.</li>
+</ol>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+<section class="faq" id="faq"><h2>Frequently asked questions</h2><div class="faq-list"><details class="faq-item" open><summary><span>What should I charge per 1,000 followers?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>As a starting anchor: Instagram Reels $12–$30, TikTok $10–$26, YouTube integrations $18–$55, YouTube dedicated videos $30–$90, LinkedIn posts $15–$45, newsletter slots $25–$90 per 1,000 <em>opens</em>. Then apply the niche and rights multipliers — they move the number more than the base does.</p></div></details><details class="faq-item"><summary><span>What are usage rights and why do they cost extra?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Usage rights let the brand run your content as paid advertising. That converts an organic post reaching your audience into ad creative reaching millions, using your face and your credibility. Perpetual all-channel usage is worth roughly double the organic fee, and it is the single most common thing creators give away for free.</p></div></details><details class="faq-item"><summary><span>Should I ever work for free product?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Only when the product retail value clearly exceeds your calculated rate and you wanted the product anyway. 'Exposure' is not consideration. Gifting is a marketing expense for the brand; treat it as one.</p></div></details><details class="faq-item"><summary><span>How do I justify my rate when the brand says it's too high?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Send the working, not the number: engagement rate versus tier benchmark, audience geography and demographics, past campaign click-through or promo-code redemptions. Buyers discount vibes. They rarely discount a spreadsheet.</p></div></details><details class="faq-item"><summary><span>Do rates differ by country?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Substantially — rates track where your <em>audience</em> is, not where you are. A creator in Manila with a 70% US audience prices against US rates. Apply a 0.3–0.5 factor for audiences concentrated in low-CPM markets.</p></div></details></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What should I charge per 1,000 followers?","acceptedAnswer":{"@type":"Answer","text":"As a starting anchor: Instagram Reels $12–$30, TikTok $10–$26, YouTube integrations $18–$55, YouTube dedicated videos $30–$90, LinkedIn posts $15–$45, newsletter slots $25–$90 per 1,000 opens. Then apply the niche and rights multipliers — they move the number more than the base does."}},{"@type":"Question","name":"What are usage rights and why do they cost extra?","acceptedAnswer":{"@type":"Answer","text":"Usage rights let the brand run your content as paid advertising. That converts an organic post reaching your audience into ad creative reaching millions, using your face and your credibility. Perpetual all-channel usage is worth roughly double the organic fee, and it is the single most common thing creators give away for free."}},{"@type":"Question","name":"Should I ever work for free product?","acceptedAnswer":{"@type":"Answer","text":"Only when the product retail value clearly exceeds your calculated rate and you wanted the product anyway. 'Exposure' is not consideration. Gifting is a marketing expense for the brand; treat it as one."}},{"@type":"Question","name":"How do I justify my rate when the brand says it's too high?","acceptedAnswer":{"@type":"Answer","text":"Send the working, not the number: engagement rate versus tier benchmark, audience geography and demographics, past campaign click-through or promo-code redemptions. Buyers discount vibes. They rarely discount a spreadsheet."}},{"@type":"Question","name":"Do rates differ by country?","acceptedAnswer":{"@type":"Answer","text":"Substantially — rates track where your audience is, not where you are. A creator in Manila with a 70% US audience prices against US rates. Apply a 0.3–0.5 factor for audiences concentrated in low-CPM markets."}}]}</script></section>
+<div class="poll" data-poll="creator-rate-card-calculator">
+<span>Did this page solve your problem?</span>
+<div class="poll-btns">
+<button type="button" data-v="yes">Yes</button>
+<button type="button" data-v="no">No</button>
+</div>
+<p class="poll-thanks" hidden>Thanks — noted. <a href="/contact/">Tell us what was missing</a>.</p>
+</div>
+</article>
+<aside class="sidebar">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#formula">The formula</a></li><li><a href="#multipliers">The multipliers that actually matter</a></li><li><a href="#negotiation">How to send it</a></li></ul></nav>
+<!-- ad slot: sidebar (sidebar) — set ADS['publisher'] in _src/config.py -->
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Want this done for you?</h3>
+<p class="small muted">We build and run content programmes using these exact models.</p>
+<a class="btn btn--primary btn--block" href="/services/#quote">Get a costed plan</a>
+</div>
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Free weekly brief</h3>
+<p class="small muted">Benchmark changes and payout shifts, every Tuesday.</p>
+<form class="cm-form" data-form="newsletter">
+<input name="email" type="email" required placeholder="you@company.com">
+<button class="btn btn--primary btn--block" type="submit" style="margin-top:.5rem">Subscribe</button>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</div>
+</aside>
+</div>
+</section>
+<section class="band band--alt">
+<div class="wrap">
+<section class="band" style="padding-top:1rem">
+<h2>Related calculators</h2>
+<div class="tool-strip"><a href="/tools/youtube-money-calculator/"><span class="n">1</span>YouTube money calculator</a><a href="/tools/youtube-shorts-rpm-calculator/"><span class="n">2</span>YouTube Shorts RPM calculator</a><a href="/tools/tiktok-earnings-calculator/"><span class="n">3</span>TikTok earnings calculator</a><a href="/tools/instagram-engagement-calculator/"><span class="n">4</span>Instagram engagement rate & rate calculator</a><a href="/tools/cpm-rpm-cpc-calculator/"><span class="n">5</span>CPM, RPM, CPC & ROAS calculator</a><a href="/tools/podcast-sponsorship-calculator/"><span class="n">6</span>Podcast sponsorship calculator</a></div>
+</section>
+<section class="newsletter newsletter--narrow" id="newsletter">
+<div class="newsletter__copy">
+<span class="eyebrow">Free weekly</span>
+<h2>The weekly Content.Media brief</h2>
+<p>Benchmarks, rate changes and platform payout shifts — decoded in five minutes. Read by creators, publishers and brand marketers. One email a week, unsubscribe in one click.</p>
+<ul class="magnet-list"><li>The <strong>2026 benchmark dataset</strong> as a CSV — <a href="/assets/data/creator-benchmarks-2026.csv" download>download it now, no signup</a></li><li>Every back issue, from the first one</li><li>Reader discount codes when tools offer them</li><li>First look at contests and prize drops</li></ul>
+</div>
+<form class="cm-form newsletter__form" data-form="newsletter" novalidate>
+<label class="sr-only" for="nl-email-narrow">Email address</label>
+<input id="nl-email-narrow" name="email" type="email" required
+placeholder="you@company.com" autocomplete="email">
+<label class="sr-only" for="nl-role-narrow">I am a…</label>
+<select id="nl-role-narrow" name="role" required>
+<option value="">I am a…</option>
+<option>Creator / channel owner</option>
+<option>Publisher / media owner</option>
+<option>Brand or in-house marketer</option>
+<option>Agency / freelancer</option>
+<option>Investor / analyst</option>
+</select>
+<button class="btn btn--primary btn--block" type="submit">Send me the brief</button>
+<label class="checkline">
+<input type="checkbox" name="consent" value="yes" required>
+<span>Email me the weekly brief and the rate card database. I can unsubscribe any time.</span>
+</label>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</section>
+</div>
+</section>
+<section class="cta-band">
+<div class="wrap cta-band__inner">
+<div>
+<h2>Numbers are the easy part. Shipping the content is the hard part.</h2>
+<p>Hand us the programme and we will build it, staff it and run it.</p>
+</div>
+<div class="cta-band__actions">
+<a class="btn btn--primary btn--lg" href="/services/#quote">Get my content plan</a>
+<a class="btn btn--ghost btn--lg" href="/services/#pricing">See what we charge</a>
+</div>
+</div>
+</section>{% endraw %}
