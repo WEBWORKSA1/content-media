@@ -1,0 +1,144 @@
+---
+layout: "default"
+title: "Content Marketing ROI Calculator — Pipeline, Ad Revenue & Payback"
+description: "Model organic traffic, leads, customers, ad revenue and payback period for a content programme, with every funnel assumption published."
+canonical: "/tools/content-roi-calculator/"
+head_extra: "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebApplication\",\"name\":\"Content marketing ROI calculator\",\"url\":\"https://content.media/tools/content-roi-calculator/\",\"applicationCategory\":\"BusinessApplication\",\"operatingSystem\":\"Any\",\"description\":\"Model organic traffic, leads, customers, ad revenue and payback period for a content programme, with every funnel assumption published.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Content.Media\"}}</script>"
+body_extra: ""
+---
+{% raw %}<section class="band" style="padding-bottom:1.5rem">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/tools/">Free tools</a></li><li aria-current="page"><span>Content marketing ROI calculator</span></li></ol></nav><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://content.media/"},{"@type":"ListItem","position":2,"name":"Free tools","item":"https://content.media/tools/"},{"@type":"ListItem","position":3,"name":"Content marketing ROI calculator","item":"https://content.media/tools/content-roi-calculator/"}]}</script>
+<h1>Content marketing ROI calculator</h1>
+<p class="lede">Content is an asset purchase with a delayed return. This model takes your keyword volume, production cost and close rate and gives you traffic, leads, pipeline, ad revenue, cost per customer and payback period.</p>
+<div class="byline">
+<div class="byline-av" aria-hidden="true">CM</div>
+<div>
+<p class="byline-name">The Content.Media research desk</p>
+<p class="byline-meta">Reviewed by Editorial board &middot; Updated September 2026 &middot;
+<a href="/editorial-policy/">How we research</a></p>
+</div>
+</div>
+<div class="calc" data-calc="roi">
+<div class="calc-head">
+<h2 style="font-size:1rem">Content marketing ROI calculator</h2>
+<div class="chipset">
+<button class="chip" type="button" data-reset>Reset</button>
+<button class="chip" type="button" data-copy="[data-out]">Copy result</button>
+<button class="chip" type="button" data-share>Share</button>
+</div>
+</div>
+<div class="calc-body">
+<div class="calc-inputs"><div class="calc-row"><label for="content-roi-calculator-pieces">Pieces of content per month<output class="val" data-for="pieces" data-suffix=""></output></label><input id="content-roi-calculator-pieces" name="pieces" type="range" min="1" max="100" step="1" value="8" data-def="8"></div><div class="calc-row"><label for="content-roi-calculator-cost">Cost per piece ($)<output class="val" data-for="cost" data-suffix=""></output></label><input id="content-roi-calculator-cost" name="cost" type="range" min="50" max="10000" step="50" value="650" data-def="650"></div><div class="calc-row"><label for="content-roi-calculator-searchvol">Average monthly searches per target keyword<output class="val" data-for="searchvol" data-suffix=""></output></label><input id="content-roi-calculator-searchvol" name="searchvol" type="range" min="50" max="100000" step="50" value="1200" data-def="1200"></div><div class="calc-row"><label for="content-roi-calculator-rank">Realistic ranking position</label><select id="content-roi-calculator-rank" name="rank" data-def="top10"><option value="top3">Top 3 (24% CTR)</option><option value="top10" selected>Positions 4–10 (6% CTR)</option></select></div><div class="calc-row"><label for="content-roi-calculator-dealvalue">Average deal or order value ($)<output class="val" data-for="dealvalue" data-suffix=""></output></label><input id="content-roi-calculator-dealvalue" name="dealvalue" type="range" min="10" max="100000" step="10" value="2400" data-def="2400"></div><div class="calc-row"><label for="content-roi-calculator-closerate">Lead-to-customer close rate (%)<output class="val" data-for="closerate" data-suffix=""></output></label><input id="content-roi-calculator-closerate" name="closerate" type="range" min="1" max="60" step="1" value="14" data-def="14"></div><div class="calc-row"><label for="content-roi-calculator-months">Programme length (months)<output class="val" data-for="months" data-suffix=""></output></label><input id="content-roi-calculator-months" name="months" type="range" min="3" max="36" step="1" value="12" data-def="12"></div>
+<p class="calc-note">Nothing you type is sent anywhere. Everything runs in your browser.</p>
+</div>
+<div class="calc-output" data-out></div>
+</div>
+</div>
+<!-- ad slot: tool_result (leaderboard) — set ADS['publisher'] in _src/config.py -->
+</div>
+</section>
+<section class="band" style="padding-top:0">
+<div class="wrap article-layout">
+<article class="prose">
+<h2 id="formula">Published assumptions</h2><div class="code">visitors  = pieces × search_volume × CTR
+leads     = visitors × 2.2%            (visitor → lead)
+customers = leads × close_rate
+pipeline  = customers × deal_value
+ad_rev    = (visitors ÷ 1000) × $18–$42 page RPM</div><p>Change any of these in the inputs. The 2.2% visitor-to-lead rate is a blended B2B benchmark for
+content with a relevant offer attached; a page with no offer converts at 0.3–0.8%, which is the
+real reason most content programmes look like they failed.</p>
+<h2 id="honest">This model is deliberately pessimistic</h2>
+<p>It treats every month as flat. Real content programmes compound: pages published in month one
+keep earning in month eighteen, internal links lift older pages, and topical authority raises the
+ceiling for everything published afterwards. A 12-month flat model typically understates a
+well-run programme's third-year return by 2–4×.</p>
+<h2 id="twoways">Content pays twice</h2>
+<p>The bar chart separates <strong>pipeline revenue</strong> from <strong>display ad revenue</strong>.
+Most brands ignore the second entirely, which is a mistake once a site clears 100,000 monthly
+sessions — at an $18–$42 page RPM that is $1,800–$4,200 a month that was already being earned and
+simply not collected. Our <a href="/guides/adsense-approval-checklist/">AdSense approval checklist</a>
+covers what has to be in place first.</p>
+<h2 id="payback">What to do with the payback number</h2>
+<p>If payback is under 9 months, increase volume. Between 9 and 18 months, hold volume and improve
+conversion — the offer is the bottleneck, not the traffic. Over 18 months, your keyword targets are
+too competitive or your deal value is too low, and adding content will not fix either.</p>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+<section class="faq" id="faq"><h2>Frequently asked questions</h2><div class="faq-list"><details class="faq-item" open><summary><span>How long before content marketing shows a return?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Six to twelve months for the first meaningful organic traffic, twelve to twenty-four for pipeline that a CFO recognises. Anyone promising 90 days is selling paid media with a content label on it.</p></div></details><details class="faq-item"><summary><span>What is a good cost per lead from content?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>It depends entirely on deal value. As a rule of thumb, cost per customer under 25% of first-year revenue is healthy. The calculator prints both cost per lead and cost per customer so you can check against your own economics.</p></div></details><details class="faq-item"><summary><span>Should I count ad revenue in content ROI?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Yes, if you run ads and your content is genuinely useful to a wide audience. Ignoring it understates the return on top-of-funnel content, which is exactly the content most likely to get cut in a budget review.</p></div></details><details class="faq-item"><summary><span>Is AI-written content cheaper enough to change the model?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>It lowers cost per piece and raises the risk of producing nothing that ranks. Search engines penalise scaled low-value content explicitly. Use AI for research, outlining and first drafts, then pay a human for the information gain — the part that actually earns the ranking.</p></div></details></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long before content marketing shows a return?","acceptedAnswer":{"@type":"Answer","text":"Six to twelve months for the first meaningful organic traffic, twelve to twenty-four for pipeline that a CFO recognises. Anyone promising 90 days is selling paid media with a content label on it."}},{"@type":"Question","name":"What is a good cost per lead from content?","acceptedAnswer":{"@type":"Answer","text":"It depends entirely on deal value. As a rule of thumb, cost per customer under 25% of first-year revenue is healthy. The calculator prints both cost per lead and cost per customer so you can check against your own economics."}},{"@type":"Question","name":"Should I count ad revenue in content ROI?","acceptedAnswer":{"@type":"Answer","text":"Yes, if you run ads and your content is genuinely useful to a wide audience. Ignoring it understates the return on top-of-funnel content, which is exactly the content most likely to get cut in a budget review."}},{"@type":"Question","name":"Is AI-written content cheaper enough to change the model?","acceptedAnswer":{"@type":"Answer","text":"It lowers cost per piece and raises the risk of producing nothing that ranks. Search engines penalise scaled low-value content explicitly. Use AI for research, outlining and first drafts, then pay a human for the information gain \u2014 the part that actually earns the ranking."}}]}</script></section>
+<div class="poll" data-poll="content-roi-calculator">
+<span>Did this page solve your problem?</span>
+<div class="poll-btns">
+<button type="button" data-v="yes">Yes</button>
+<button type="button" data-v="no">No</button>
+</div>
+<p class="poll-thanks" hidden>Thanks — noted. <a href="/contact/">Tell us what was missing</a>.</p>
+</div>
+</article>
+<aside class="sidebar">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#formula">The formula</a></li><li><a href="#honest">This model is deliberately pessimistic</a></li><li><a href="#twoways">Content pays twice</a></li><li><a href="#payback">What to do with the payback number</a></li></ul></nav>
+<!-- ad slot: sidebar (sidebar) — set ADS['publisher'] in _src/config.py -->
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Want this done for you?</h3>
+<p class="small muted">We build and run content programmes using these exact models.</p>
+<a class="btn btn--primary btn--block" href="/services/#quote">Get a costed plan</a>
+</div>
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Free weekly brief</h3>
+<p class="small muted">Benchmark changes and payout shifts, every Tuesday.</p>
+<form class="cm-form" data-form="newsletter">
+<input name="email" type="email" required placeholder="you@company.com">
+<button class="btn btn--primary btn--block" type="submit" style="margin-top:.5rem">Subscribe</button>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</div>
+</aside>
+</div>
+</section>
+<section class="band band--alt">
+<div class="wrap">
+<section class="band" style="padding-top:1rem">
+<h2>Related calculators</h2>
+<div class="tool-strip"><a href="/tools/youtube-money-calculator/"><span class="n">1</span>YouTube money calculator</a><a href="/tools/youtube-shorts-rpm-calculator/"><span class="n">2</span>YouTube Shorts RPM calculator</a><a href="/tools/tiktok-earnings-calculator/"><span class="n">3</span>TikTok earnings calculator</a><a href="/tools/instagram-engagement-calculator/"><span class="n">4</span>Instagram engagement rate & rate calculator</a><a href="/tools/creator-rate-card-calculator/"><span class="n">5</span>Creator rate card builder</a><a href="/tools/cpm-rpm-cpc-calculator/"><span class="n">6</span>CPM, RPM, CPC & ROAS calculator</a></div>
+</section>
+<section class="newsletter newsletter--narrow" id="newsletter">
+<div class="newsletter__copy">
+<span class="eyebrow">Free weekly</span>
+<h2>The weekly Content.Media brief</h2>
+<p>Benchmarks, rate changes and platform payout shifts — decoded in five minutes. Read by creators, publishers and brand marketers. One email a week, unsubscribe in one click.</p>
+<ul class="magnet-list"><li>The <strong>2026 benchmark dataset</strong> as a CSV — <a href="/assets/data/creator-benchmarks-2026.csv" download>download it now, no signup</a></li><li>Every back issue, from the first one</li><li>Reader discount codes when tools offer them</li><li>First look at contests and prize drops</li></ul>
+</div>
+<form class="cm-form newsletter__form" data-form="newsletter" novalidate>
+<label class="sr-only" for="nl-email-narrow">Email address</label>
+<input id="nl-email-narrow" name="email" type="email" required
+placeholder="you@company.com" autocomplete="email">
+<label class="sr-only" for="nl-role-narrow">I am a…</label>
+<select id="nl-role-narrow" name="role" required>
+<option value="">I am a…</option>
+<option>Creator / channel owner</option>
+<option>Publisher / media owner</option>
+<option>Brand or in-house marketer</option>
+<option>Agency / freelancer</option>
+<option>Investor / analyst</option>
+</select>
+<button class="btn btn--primary btn--block" type="submit">Send me the brief</button>
+<label class="checkline">
+<input type="checkbox" name="consent" value="yes" required>
+<span>Email me the weekly brief and the rate card database. I can unsubscribe any time.</span>
+</label>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</section>
+</div>
+</section>
+<section class="cta-band">
+<div class="wrap cta-band__inner">
+<div>
+<h2>Numbers are the easy part. Shipping the content is the hard part.</h2>
+<p>Hand us the programme and we will build it, staff it and run it.</p>
+</div>
+<div class="cta-band__actions">
+<a class="btn btn--primary btn--lg" href="/services/#quote">Get my content plan</a>
+<a class="btn btn--ghost btn--lg" href="/services/#pricing">See what we charge</a>
+</div>
+</div>
+</section>{% endraw %}
