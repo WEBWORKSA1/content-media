@@ -1,0 +1,126 @@
+---
+layout: "default"
+title: "Programmatic SEO Without Getting Penalised | Content.Media"
+description: "How to build templated pages at scale that still pass the information-gain test, and where the line is under scaled content abuse policy."
+canonical: "/guides/programmatic-seo-for-publishers/"
+head_extra: "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Programmatic SEO Without Getting Penalised\",\"description\":\"How to build templated pages at scale that still pass the information-gain test, and where the line is under scaled content abuse policy.\",\"url\":\"https://content.media/guides/programmatic-seo-for-publishers/\",\"datePublished\":\"2026-09-01\",\"dateModified\":\"2026-09-21\",\"author\":{\"@type\":\"Organization\",\"name\":\"Content.Media\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Content.Media\"},\"articleSection\":\"SEO\"}</script>"
+body_extra: ""
+---
+{% raw %}<section class="band" style="padding-bottom:1rem">
+<div class="wrap" style="max-width:860px">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/guides/">Guides</a></li><li aria-current="page"><span>SEO</span></li></ol></nav><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://content.media/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://content.media/guides/"},{"@type":"ListItem","position":3,"name":"SEO","item":"https://content.media/guides/"}]}</script>
+<span class="eyebrow">SEO &middot; 10 min read</span>
+<h1>Programmatic SEO Without Getting Penalised</h1>
+<p class="lede">How to build templated pages at scale that still pass the information-gain test, and where the line is under scaled content abuse policy.</p>
+<div class="byline">
+<div class="byline-av" aria-hidden="true">CM</div>
+<div>
+<p class="byline-name">The Content.Media research desk</p>
+<p class="byline-meta">Reviewed by Editorial board &middot; Updated September 2026 &middot;
+<a href="/editorial-policy/">How we research</a></p>
+</div>
+</div>
+</div>
+</section>
+<section class="band" style="padding-top:0">
+<div class="wrap article-layout">
+<article class="prose">
+<div class="callout"><h4>The short version</h4><p>Programmatic pages survive when each one carries data that exists nowhere else. Templated prose around an identical dataset is the definition of scaled content abuse.</p></div>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+<h2 id="line">Where the line is</h2>
+<p>Search engines do not penalise templates. They penalise pages that add nothing. A programmatic
+page passes when a reader arriving on it gets a specific, correct answer they could not assemble
+themselves in under a minute. It fails when the only thing that changes between two pages is a
+noun in the headline.</p>
+<h3>The test</h3>
+<blockquote>Strip the template. What is left? If the answer is "a city name", you have a penalty
+waiting. If the answer is "a unique dataset, a calculation, a comparison, or a verified list", you
+have a business.</blockquote>
+<h2 id="patterns">Patterns that hold up</h2>
+<table>
+<thead><tr><th>Pattern</th><th>Unique element per page</th></tr></thead>
+<tbody>
+<tr><td>Calculator variants</td><td>A different formula and a different result set</td></tr>
+<tr><td>Tool comparisons (X vs Y)</td><td>Verified feature and price matrix for that pair</td></tr>
+<tr><td>Benchmark by segment</td><td>Real measured data for that segment</td></tr>
+<tr><td>Directory category pages</td><td>A curated, editorially-noted list</td></tr>
+<tr><td>Alternatives pages</td><td>Researched substitutes with reasons, not a scraped list</td></tr>
+<tr><td>Rate cards by platform and tier</td><td>Distinct pricing tables and multipliers</td></tr>
+</tbody></table>
+<h2 id="build">Building it</h2>
+<ol>
+<li><strong>Get the data first.</strong> If you do not have a proprietary or laboriously assembled
+dataset, stop. There is no programmatic strategy without one.</li>
+<li><strong>Design one page properly</strong> and make it genuinely useful before templating anything.</li>
+<li><strong>Vary structure, not just values.</strong> Sections that appear only when relevant; FAQs
+generated from the actual data; comparisons that only render when a meaningful difference exists.</li>
+<li><strong>Publish in batches</strong> and watch indexation. If 30% of a batch is not indexed after
+six weeks, the pages are not clearing the bar — fix them before publishing the next batch.</li>
+<li><strong>Internal-link laterally.</strong> Related pages, parent category, and a hub. Orphaned
+programmatic pages get crawled once and forgotten.</li>
+<li><strong>Prune ruthlessly.</strong> Pages with no impressions after six months should be merged
+or removed. A large index of dead pages drags the whole site.</li>
+</ol>
+<h2 id="tech">Technical requirements</h2>
+<ul>
+<li>Unique title and meta description generated from the data, not from a single string with a variable.</li>
+<li>Structured data appropriate to the page type — FAQPage, ItemList, SoftwareApplication, Dataset.</li>
+<li>A real XML sitemap segmented by page type so you can measure indexation per segment.</li>
+<li>Static rendering. If the unique content only exists after JavaScript runs, assume it does not exist.</li>
+<li>Canonical tags that handle filter and sort parameters, or you will index ten thousand near-duplicates.</li>
+</ul>
+<h2 id="honest">The honest economics</h2>
+<p>Programmatic SEO is a data-acquisition problem wearing an SEO costume. The build is two weeks;
+the dataset is two years. Sites that win here — comparison sites, directories, benchmark
+publishers — win because assembling and maintaining the data is genuinely hard, not because the
+templating was clever.</p>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+<div class="poll" data-poll="programmatic-seo-for-publishers">
+<span>Did this page solve your problem?</span>
+<div class="poll-btns">
+<button type="button" data-v="yes">Yes</button>
+<button type="button" data-v="no">No</button>
+</div>
+<p class="poll-thanks" hidden>Thanks — noted. <a href="/contact/">Tell us what was missing</a>.</p>
+</div>
+</article>
+<aside class="sidebar">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#line">Where the line is</a></li><li><a href="#patterns">Patterns that hold up</a></li><li><a href="#build">Building it</a></li><li><a href="#tech">Technical requirements</a></li><li><a href="#honest">The honest economics</a></li></ul></nav>
+<!-- ad slot: sidebar (sidebar) — set ADS['publisher'] in _src/config.py -->
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Free weekly brief</h3>
+<p class="small muted">Benchmark changes and payout shifts, every Tuesday. Free.</p>
+<form class="cm-form" data-form="newsletter">
+<input name="email" type="email" required placeholder="you@company.com">
+<button class="btn btn--primary btn--block" type="submit" style="margin-top:.5rem">Subscribe</button>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</div>
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Want this done for you?</h3>
+<p class="small muted">We build and run content programmes end to end.</p>
+<a class="btn btn--primary btn--block" href="/services/#quote">Get a costed plan</a>
+</div>
+</aside>
+</div>
+</section>
+<section class="band band--alt">
+<div class="wrap">
+<div class="sec-head">
+<div><span class="eyebrow">Keep reading</span><h2>Related guides</h2></div><a class="sec-link" href="/guides/">All guides &rarr;</a>
+</div>
+<div class="grid g3"><article class="card"><span class="tag tag--brand">Monetisation</span><h3><a class="stretch" href="/guides/adsense-approval-checklist/">The AdSense Approval Checklist That Actually Works in 2026</a></h3><p>Every page, policy and signal Google looks for before approving a site for AdSense, plus the two rejection reasons that account for almost everything.</p></article><article class="card"><span class="tag tag--brand">Pricing</span><h3><a class="stretch" href="/guides/creator-rate-card-guide/">How to Build a Creator Rate Card You Can Defend</a></h3><p>A complete pricing framework for sponsorships: base rates, the multipliers that matter, usage rights, exclusivity, and the negotiation script.</p></article><article class="card"><span class="tag tag--brand">Data</span><h3><a class="stretch" href="/guides/youtube-rpm-by-niche/">YouTube RPM by Niche: The 2026 Numbers</a></h3><p>Creator take-home RPM for 14 niches with geography multipliers, and the three variables that move it more than anything else.</p></article></div>
+</div>
+</section>
+<section class="cta-band">
+<div class="wrap cta-band__inner">
+<div>
+<h2>Stop reading about it. Have it built.</h2>
+<p>Tell us the shape of the problem and we come back with scope and a number.</p>
+</div>
+<div class="cta-band__actions">
+<a class="btn btn--primary btn--lg" href="/services/#quote">Get my content plan</a>
+<a class="btn btn--ghost btn--lg" href="/services/#pricing">See what we charge</a>
+</div>
+</div>
+</section>{% endraw %}
