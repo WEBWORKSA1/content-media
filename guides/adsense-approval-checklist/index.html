@@ -1,0 +1,153 @@
+---
+layout: "default"
+title: "The AdSense Approval Checklist That Actually Works in 2026 | Content.Media"
+description: "Every page, policy and signal Google looks for before approving a site for AdSense, plus the two rejection reasons that account for almost everything."
+canonical: "/guides/adsense-approval-checklist/"
+head_extra: "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"The AdSense Approval Checklist That Actually Works in 2026\",\"description\":\"Every page, policy and signal Google looks for before approving a site for AdSense, plus the two rejection reasons that account for almost everything.\",\"url\":\"https://content.media/guides/adsense-approval-checklist/\",\"datePublished\":\"2026-09-01\",\"dateModified\":\"2026-09-21\",\"author\":{\"@type\":\"Organization\",\"name\":\"Content.Media\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Content.Media\"},\"articleSection\":\"Monetisation\"}</script>"
+body_extra: ""
+---
+{% raw %}<section class="band" style="padding-bottom:1rem">
+<div class="wrap" style="max-width:860px">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/guides/">Guides</a></li><li aria-current="page"><span>Monetisation</span></li></ol></nav><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://content.media/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://content.media/guides/"},{"@type":"ListItem","position":3,"name":"Monetisation","item":"https://content.media/guides/"}]}</script>
+<span class="eyebrow">Monetisation &middot; 9 min read</span>
+<h1>The AdSense Approval Checklist That Actually Works in 2026</h1>
+<p class="lede">Every page, policy and signal Google looks for before approving a site for AdSense, plus the two rejection reasons that account for almost everything.</p>
+<div class="byline">
+<div class="byline-av" aria-hidden="true">CM</div>
+<div>
+<p class="byline-name">The Content.Media research desk</p>
+<p class="byline-meta">Reviewed by Editorial board &middot; Updated September 2026 &middot;
+<a href="/editorial-policy/">How we research</a></p>
+</div>
+</div>
+</div>
+</section>
+<section class="band" style="padding-top:0">
+<div class="wrap article-layout">
+<article class="prose">
+<div class="callout"><h4>The short version</h4><p>Two rejection reasons cover almost every failed application: “Low value content” and “Site does not comply with Google policies”. Both are fixable, and both are about structure as much as writing.</p></div>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+<h2 id="before">Before you apply</h2>
+<p>Google's published eligibility bar is thin — be 18, own the site, have original content, comply
+with policy. The real bar is higher, and it is enforced by a reviewer who spends about ninety
+seconds on your site. Everything below is aimed at that ninety seconds.</p>
+<h3>The pages that must exist</h3>
+<ul>
+<li><strong>Privacy policy</strong> — must disclose third-party cookies and Google's use of
+advertising cookies by name. This is non-negotiable and is checked.</li>
+<li><strong>Terms of use</strong></li>
+<li><strong>About</strong> — who publishes this, and why they are credible on the subject.</li>
+<li><strong>Contact</strong> — a real, working method. A form is fine; a dead mailto is not.</li>
+<li><strong>Cookie / consent notice</strong> — required for EEA, UK and Swiss traffic, and it must
+be a Google-certified CMP. Applications with EEA traffic and no CMP are rejected on policy grounds.</li>
+<li><strong>Editorial or advertising disclosure</strong> — not formally required, but it is the
+cheapest trust signal on the list.</li>
+</ul>
+<h3>Content volume and quality</h3>
+<p>There is no published minimum. In practice, twenty to thirty substantial original pages is the
+working threshold, and "substantial" means information the reader cannot get from the first result
+on the same query. Google's <em>scaled content abuse</em> policy is explicitly hostile to bulk
+AI-rewritten pages, and it is enforced with automated classifiers before a human ever looks.</p>
+<blockquote>The test that matters: could a reader who already read the top three results learn
+something new from your page? If not, it is not "low value" by accident — it is low value by design.</blockquote>
+<h3>Technical and structural signals</h3>
+<ul>
+<li>Custom domain. Free subdomains are rejected almost automatically.</li>
+<li>HTTPS, mobile-responsive, no layout shift disasters.</li>
+<li>Clear top-level navigation. A reviewer must reach any section in one click.</li>
+<li>No placeholder pages, no "coming soon", no empty category archives.</li>
+<li>Indexed in Google Search Console with a submitted sitemap.</li>
+<li>Some organic traffic. Zero-traffic sites are commonly deferred.</li>
+<li><code>ads.txt</code> at the domain root once approved.</li>
+</ul>
+<h2 id="snippets">The code, exactly</h2>
+<p>Site verification and the main library go in <code>&lt;head&gt;</code> on every page:</p><div class="code">&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+        crossorigin="anonymous"&gt;&lt;/script&gt;</div><p>A responsive display unit:</p><div class="code">&lt;ins class="adsbygoogle" style="display:block"
+     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1234567890"
+     data-ad-format="auto" data-full-width-responsive="true"&gt;&lt;/ins&gt;
+&lt;script&gt;(adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;</div><p>An in-article unit, which is the highest-RPM manual placement on most content sites:</p><div class="code">&lt;ins class="adsbygoogle" style="display:block; text-align:center;"
+     data-ad-layout="in-article" data-ad-format="fluid"
+     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="5678901234"&gt;&lt;/ins&gt;
+&lt;script&gt;(adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;</div><p>And <code>ads.txt</code>, one line, at the domain root:</p><div class="code">google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0</div><p>Note the difference: the script tag uses <code>ca-pub-</code>, the ads.txt line uses <code>pub-</code>.
+Getting this wrong triggers the "earnings at risk" warning and silently suppresses your revenue.</p>
+<h2 id="placement">Placement and density, post-cap</h2>
+<p>Google removed the hard per-page unit cap years ago and replaced it with a qualitative
+<em>valuable inventory</em> policy: content must outweigh ads. What is still explicitly banned:</p>
+<ul>
+<li>Ads on pages with little or no content, error pages or thank-you pages</li>
+<li>Ads styled to look like content or navigation</li>
+<li>Units placed adjacent to buttons in a way that induces accidental clicks</li>
+<li>More than one sticky or anchor unit</li>
+<li>Auto-refreshing units, and any encouragement to click</li>
+</ul>
+<p>A safe production density: three to five units on a long desktop article; on mobile, one above
+the fold, one or two in-content, and a single anchor. Better Ads Standards also bans full-screen
+mobile interstitials and ad density above roughly 30% of viewport height.</p>
+<h2 id="auto">Auto Ads or manual units?</h2>
+<p>Auto Ads is one snippet and Google decides everything. It is the fastest route to revenue and the
+only way to get anchor and vignette formats, but it causes layout shift and puts units where you
+would not. The common production setup is manual in-article units for the body, with Auto Ads
+enabled but restricted to anchor and vignette only.</p>
+<h2 id="rpm">What to expect</h2>
+<p>Headline RPM figures by niche assume tier-1 traffic. For marketing and business content with a
+mixed-geography audience, a realistic expectation for a new site is <strong>$8–$20 page RPM</strong>,
+not the $30+ figures quoted in case studies. Run your own numbers in the
+<a href="/tools/cpm-rpm-cpc-calculator/">CPM/RPM calculator</a>.</p>
+<h2 id="rejected">If you get rejected</h2>
+<ol>
+<li>Read which of the two reasons it was. They need completely different fixes.</li>
+<li>"Policy": check the legal pages, the CMP, and any page with thin or duplicated content.</li>
+<li>"Low value": add depth to your ten best pages rather than adding twenty new ones. Original data,
+original screenshots, a calculator, a table nobody else has — information gain, not word count.</li>
+<li>Wait at least two weeks between applications and change something material each time.</li>
+</ol>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+<div class="poll" data-poll="adsense-approval-checklist">
+<span>Did this page solve your problem?</span>
+<div class="poll-btns">
+<button type="button" data-v="yes">Yes</button>
+<button type="button" data-v="no">No</button>
+</div>
+<p class="poll-thanks" hidden>Thanks — noted. <a href="/contact/">Tell us what was missing</a>.</p>
+</div>
+</article>
+<aside class="sidebar">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#before">Before you apply</a></li><li><a href="#snippets">The code, exactly</a></li><li><a href="#placement">Placement and density, post-cap</a></li><li><a href="#auto">Auto Ads or manual units?</a></li><li><a href="#rpm">What to expect</a></li><li><a href="#rejected">If you get rejected</a></li></ul></nav>
+<!-- ad slot: sidebar (sidebar) — set ADS['publisher'] in _src/config.py -->
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Free weekly brief</h3>
+<p class="small muted">Benchmark changes and payout shifts, every Tuesday. Free.</p>
+<form class="cm-form" data-form="newsletter">
+<input name="email" type="email" required placeholder="you@company.com">
+<button class="btn btn--primary btn--block" type="submit" style="margin-top:.5rem">Subscribe</button>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</div>
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Want this done for you?</h3>
+<p class="small muted">We build and run content programmes end to end.</p>
+<a class="btn btn--primary btn--block" href="/services/#quote">Get a costed plan</a>
+</div>
+</aside>
+</div>
+</section>
+<section class="band band--alt">
+<div class="wrap">
+<div class="sec-head">
+<div><span class="eyebrow">Keep reading</span><h2>Related guides</h2></div><a class="sec-link" href="/guides/">All guides &rarr;</a>
+</div>
+<div class="grid g3"><article class="card"><span class="tag tag--brand">Pricing</span><h3><a class="stretch" href="/guides/creator-rate-card-guide/">How to Build a Creator Rate Card You Can Defend</a></h3><p>A complete pricing framework for sponsorships: base rates, the multipliers that matter, usage rights, exclusivity, and the negotiation script.</p></article><article class="card"><span class="tag tag--brand">Data</span><h3><a class="stretch" href="/guides/youtube-rpm-by-niche/">YouTube RPM by Niche: The 2026 Numbers</a></h3><p>Creator take-home RPM for 14 niches with geography multipliers, and the three variables that move it more than anything else.</p></article><article class="card"><span class="tag tag--brand">Growth</span><h3><a class="stretch" href="/guides/lead-generation-for-content-sites/">Lead Generation for Content Sites: The Funnel That Converts</a></h3><p>The multi-step form structure, qualifying questions and microcopy that turn content traffic into qualified pipeline.</p></article></div>
+</div>
+</section>
+<section class="cta-band">
+<div class="wrap cta-band__inner">
+<div>
+<h2>Stop reading about it. Have it built.</h2>
+<p>Tell us the shape of the problem and we come back with scope and a number.</p>
+</div>
+<div class="cta-band__actions">
+<a class="btn btn--primary btn--lg" href="/services/#quote">Get my content plan</a>
+<a class="btn btn--ghost btn--lg" href="/services/#pricing">See what we charge</a>
+</div>
+</div>
+</section>{% endraw %}
