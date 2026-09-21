@@ -1,0 +1,144 @@
+---
+layout: "default"
+title: "YouTube Money Calculator 2026 — Real RPM by Niche and Country"
+description: "Estimate YouTube AdSense earnings with published RPM ranges for 14 niches and 5 audience geographies. Free, no sign-up, formula shown."
+canonical: "/tools/youtube-money-calculator/"
+head_extra: "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebApplication\",\"name\":\"YouTube money calculator\",\"url\":\"https://content.media/tools/youtube-money-calculator/\",\"applicationCategory\":\"BusinessApplication\",\"operatingSystem\":\"Any\",\"description\":\"Estimate YouTube AdSense earnings with published RPM ranges for 14 niches and 5 audience geographies. Free, no sign-up, formula shown.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Content.Media\"}}</script>"
+body_extra: ""
+---
+{% raw %}<section class="band" style="padding-bottom:1.5rem">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/tools/">Free tools</a></li><li aria-current="page"><span>YouTube money calculator</span></li></ol></nav><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://content.media/"},{"@type":"ListItem","position":2,"name":"Free tools","item":"https://content.media/tools/"},{"@type":"ListItem","position":3,"name":"YouTube money calculator","item":"https://content.media/tools/youtube-money-calculator/"}]}</script>
+<h1>YouTube money calculator</h1>
+<p class="lede">Most YouTube earnings calculators multiply your views by one invented number. This one uses a published RPM range for your actual niche, applies an audience-geography factor, and accounts for the fact that only 55–78% of views ever serve a paid ad. The assumptions print underneath the result.</p>
+<div class="byline">
+<div class="byline-av" aria-hidden="true">CM</div>
+<div>
+<p class="byline-name">The Content.Media research desk</p>
+<p class="byline-meta">Reviewed by Editorial board &middot; Updated September 2026 &middot;
+<a href="/editorial-policy/">How we research</a></p>
+</div>
+</div>
+<div class="calc" data-calc="youtube">
+<div class="calc-head">
+<h2 style="font-size:1rem">YouTube money calculator</h2>
+<div class="chipset">
+<button class="chip" type="button" data-reset>Reset</button>
+<button class="chip" type="button" data-copy="[data-out]">Copy result</button>
+<button class="chip" type="button" data-share>Share</button>
+</div>
+</div>
+<div class="calc-body">
+<div class="calc-inputs"><div class="calc-row"><label for="youtube-money-calculator-views">Monthly views<output class="val" data-for="views" data-suffix=""></output></label><input id="youtube-money-calculator-views" name="views" type="range" min="1000" max="20000000" step="1000" value="250000" data-def="250000"></div><div class="calc-row"><label for="youtube-money-calculator-niche">Content niche</label><select id="youtube-money-calculator-niche" name="niche" data-def="marketing"><option value="finance">Personal finance &amp; investing</option><option value="saas">B2B software &amp; SaaS</option><option value="realestate">Real estate &amp; mortgage</option><option value="marketing" selected>Marketing &amp; business</option><option value="tech">Technology &amp; gadget reviews</option><option value="education">Education &amp; how-to</option><option value="health">Health, fitness &amp; wellness</option><option value="travel">Travel</option><option value="food">Food &amp; cooking</option><option value="beauty">Beauty &amp; fashion</option><option value="gaming">Gaming</option><option value="entertain">Entertainment &amp; vlogs</option><option value="music">Music</option><option value="kids">Kids &amp; family</option></select></div><div class="calc-row"><label for="youtube-money-calculator-geo">Audience geography</label><select id="youtube-money-calculator-geo" name="geo" data-def="tier1"><option value="us">Mostly United States</option><option value="tier1" selected>Mixed tier-1 (US/UK/CA/AU)</option><option value="europe">Mostly Western Europe</option><option value="mixed">Global mix</option><option value="tier3">Mostly South Asia / SEA / LATAM</option></select></div><div class="calc-row"><label for="youtube-money-calculator-subs">Subscribers<output class="val" data-for="subs" data-suffix=""></output></label><input id="youtube-money-calculator-subs" name="subs" type="range" min="0" max="10000000" step="100" value="50000" data-def="50000"></div>
+<p class="calc-note">Nothing you type is sent anywhere. Everything runs in your browser.</p>
+</div>
+<div class="calc-output" data-out></div>
+</div>
+</div>
+<!-- ad slot: tool_result (leaderboard) — set ADS['publisher'] in _src/config.py -->
+</div>
+</section>
+<section class="band" style="padding-top:0">
+<div class="wrap article-layout">
+<article class="prose">
+<h2 id="formula">The formula</h2><div class="code">monetised_views = monthly_views × monetised_share (0.55 – 0.78)
+adsense_revenue = (monetised_views ÷ 1000) × niche_RPM × geography_multiplier</div><p>The RPM figures used are <strong>creator take-home</strong>, i.e. already net of YouTube's
+45% share of in-stream advertising revenue. If a calculator quotes you a $30 "RPM" for gaming,
+it is quoting the advertiser's CPM, not your payout.</p>
+<h2 id="rpm">Why the range is so wide</h2>
+<p>Three variables move YouTube RPM more than anything else, and none of them is subscriber count:</p>
+<ul>
+<li><strong>Niche.</strong> A finance channel and a music channel with identical view counts differ
+by 10× in revenue, because advertisers bidding on finance are buying a customer worth thousands.</li>
+<li><strong>Audience geography.</strong> A view from the United States is worth roughly 4–5× a view
+from a tier-3 market. This is the single most common reason a creator's real earnings come in below
+every calculator they tried.</li>
+<li><strong>Format and length.</strong> Long-form video with mid-roll breaks carries multiple ad
+impressions per view. Shorts pay from a pool at roughly 1–3% of that rate — use the
+<a href="/tools/youtube-shorts-rpm-calculator/">Shorts calculator</a> instead.</li>
+</ul>
+<h2 id="beyond">AdSense is the floor, not the ceiling</h2>
+<p>On a healthy channel, advertising is typically 25–45% of total revenue. The bar chart in the
+result models the other rails: sponsorships priced from our
+<a href="/tools/creator-rate-card-calculator/">rate card builder</a>, channel memberships at a
+realistic 0.4% conversion, and affiliate income. If AdSense is 90% of your revenue you do not have
+a business, you have a lottery ticket tied to one algorithm.</p>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+<section class="faq" id="faq"><h2>Frequently asked questions</h2><div class="faq-list"><details class="faq-item" open><summary><span>How much does YouTube pay per 1,000 views in 2026?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Between roughly $1.00 and $38.00 to the creator, depending almost entirely on niche and audience country. Personal finance and B2B software sit at the top ($14–$38). Gaming, music and general entertainment sit at the bottom ($1.00–$6.00). The often-quoted '$3–$5 per 1,000 views' is a global average that describes almost nobody accurately.</p></div></details><details class="faq-item"><summary><span>How many views do I need to make $1,000 a month?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>In a marketing or business niche at a $10–$26 RPM with a tier-1 audience, roughly 55,000 to 145,000 monthly views. In gaming at a $1.20–$5.50 RPM, 250,000 to 1.1 million. Set the calculator to your niche and drag the view slider until the monthly figure reads $1,000.</p></div></details><details class="faq-item"><summary><span>Do I need 1,000 subscribers to earn anything?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>For the YouTube Partner Programme, yes — 1,000 subscribers plus 4,000 valid public watch hours in 12 months, or 10 million valid Shorts views in 90 days. But sponsorships, affiliate income and memberships have no threshold at all, and micro-channels routinely out-earn mid-size channels on brand deals because their engagement is higher.</p></div></details><details class="faq-item"><summary><span>Why is my real RPM lower than this estimate?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Four usual causes: a large share of views from low-CPM countries; a high proportion of Shorts inside your total view count; heavy ad-blocker usage in a tech-literate audience; or videos flagged as limited-monetisation. Check the geography breakdown in YouTube Analytics first — it explains the gap about 70% of the time.</p></div></details><details class="faq-item"><summary><span>Is this calculator accurate?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>It is a model, and it prints its assumptions so you can audit them. Treat the range as a planning band, not a forecast. If your actual RPM sits outside the range for your niche and geography, something structural is different about your channel and it is worth investigating.</p></div></details></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does YouTube pay per 1,000 views in 2026?","acceptedAnswer":{"@type":"Answer","text":"Between roughly $1.00 and $38.00 to the creator, depending almost entirely on niche and audience country. Personal finance and B2B software sit at the top ($14\u2013$38). Gaming, music and general entertainment sit at the bottom ($1.00\u2013$6.00). The often-quoted '$3\u2013$5 per 1,000 views' is a global average that describes almost nobody accurately."}},{"@type":"Question","name":"How many views do I need to make $1,000 a month?","acceptedAnswer":{"@type":"Answer","text":"In a marketing or business niche at a $10\u2013$26 RPM with a tier-1 audience, roughly 55,000 to 145,000 monthly views. In gaming at a $1.20\u2013$5.50 RPM, 250,000 to 1.1 million. Set the calculator to your niche and drag the view slider until the monthly figure reads $1,000."}},{"@type":"Question","name":"Do I need 1,000 subscribers to earn anything?","acceptedAnswer":{"@type":"Answer","text":"For the YouTube Partner Programme, yes \u2014 1,000 subscribers plus 4,000 valid public watch hours in 12 months, or 10 million valid Shorts views in 90 days. But sponsorships, affiliate income and memberships have no threshold at all, and micro-channels routinely out-earn mid-size channels on brand deals because their engagement is higher."}},{"@type":"Question","name":"Why is my real RPM lower than this estimate?","acceptedAnswer":{"@type":"Answer","text":"Four usual causes: a large share of views from low-CPM countries; a high proportion of Shorts inside your total view count; heavy ad-blocker usage in a tech-literate audience; or videos flagged as limited-monetisation. Check the geography breakdown in YouTube Analytics first \u2014 it explains the gap about 70% of the time."}},{"@type":"Question","name":"Is this calculator accurate?","acceptedAnswer":{"@type":"Answer","text":"It is a model, and it prints its assumptions so you can audit them. Treat the range as a planning band, not a forecast. If your actual RPM sits outside the range for your niche and geography, something structural is different about your channel and it is worth investigating."}}]}</script></section>
+<div class="poll" data-poll="youtube-money-calculator">
+<span>Did this page solve your problem?</span>
+<div class="poll-btns">
+<button type="button" data-v="yes">Yes</button>
+<button type="button" data-v="no">No</button>
+</div>
+<p class="poll-thanks" hidden>Thanks — noted. <a href="/contact/">Tell us what was missing</a>.</p>
+</div>
+</article>
+<aside class="sidebar">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#formula">The formula</a></li><li><a href="#rpm">Why the range is so wide</a></li><li><a href="#beyond">AdSense is the floor, not the ceiling</a></li></ul></nav>
+<!-- ad slot: sidebar (sidebar) — set ADS['publisher'] in _src/config.py -->
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Want this done for you?</h3>
+<p class="small muted">We build and run content programmes using these exact models.</p>
+<a class="btn btn--primary btn--block" href="/services/#quote">Get a costed plan</a>
+</div>
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Free weekly brief</h3>
+<p class="small muted">Benchmark changes and payout shifts, every Tuesday.</p>
+<form class="cm-form" data-form="newsletter">
+<input name="email" type="email" required placeholder="you@company.com">
+<button class="btn btn--primary btn--block" type="submit" style="margin-top:.5rem">Subscribe</button>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</div>
+</aside>
+</div>
+</section>
+<section class="band band--alt">
+<div class="wrap">
+<section class="band" style="padding-top:1rem">
+<h2>Related calculators</h2>
+<div class="tool-strip"><a href="/tools/youtube-shorts-rpm-calculator/"><span class="n">1</span>YouTube Shorts RPM calculator</a><a href="/tools/tiktok-earnings-calculator/"><span class="n">2</span>TikTok earnings calculator</a><a href="/tools/instagram-engagement-calculator/"><span class="n">3</span>Instagram engagement rate & rate calculator</a><a href="/tools/creator-rate-card-calculator/"><span class="n">4</span>Creator rate card builder</a><a href="/tools/cpm-rpm-cpc-calculator/"><span class="n">5</span>CPM, RPM, CPC & ROAS calculator</a><a href="/tools/podcast-sponsorship-calculator/"><span class="n">6</span>Podcast sponsorship calculator</a></div>
+</section>
+<section class="newsletter newsletter--narrow" id="newsletter">
+<div class="newsletter__copy">
+<span class="eyebrow">Free weekly</span>
+<h2>The weekly Content.Media brief</h2>
+<p>Benchmarks, rate changes and platform payout shifts — decoded in five minutes. Read by creators, publishers and brand marketers. One email a week, unsubscribe in one click.</p>
+<ul class="magnet-list"><li>The <strong>2026 benchmark dataset</strong> as a CSV — <a href="/assets/data/creator-benchmarks-2026.csv" download>download it now, no signup</a></li><li>Every back issue, from the first one</li><li>Reader discount codes when tools offer them</li><li>First look at contests and prize drops</li></ul>
+</div>
+<form class="cm-form newsletter__form" data-form="newsletter" novalidate>
+<label class="sr-only" for="nl-email-narrow">Email address</label>
+<input id="nl-email-narrow" name="email" type="email" required
+placeholder="you@company.com" autocomplete="email">
+<label class="sr-only" for="nl-role-narrow">I am a…</label>
+<select id="nl-role-narrow" name="role" required>
+<option value="">I am a…</option>
+<option>Creator / channel owner</option>
+<option>Publisher / media owner</option>
+<option>Brand or in-house marketer</option>
+<option>Agency / freelancer</option>
+<option>Investor / analyst</option>
+</select>
+<button class="btn btn--primary btn--block" type="submit">Send me the brief</button>
+<label class="checkline">
+<input type="checkbox" name="consent" value="yes" required>
+<span>Email me the weekly brief and the rate card database. I can unsubscribe any time.</span>
+</label>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</section>
+</div>
+</section>
+<section class="cta-band">
+<div class="wrap cta-band__inner">
+<div>
+<h2>Numbers are the easy part. Shipping the content is the hard part.</h2>
+<p>Hand us the programme and we will build it, staff it and run it.</p>
+</div>
+<div class="cta-band__actions">
+<a class="btn btn--primary btn--lg" href="/services/#quote">Get my content plan</a>
+<a class="btn btn--ghost btn--lg" href="/services/#pricing">See what we charge</a>
+</div>
+</div>
+</section>{% endraw %}
