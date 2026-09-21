@@ -1,0 +1,130 @@
+---
+layout: "default"
+title: "How Donation-Funded Media Actually Works | Content.Media"
+description: "Tier design, price points, transparency and the persuasion patterns that make reader support work — plus the embeds that run on a static site."
+canonical: "/guides/donation-funded-media/"
+head_extra: "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"How Donation-Funded Media Actually Works\",\"description\":\"Tier design, price points, transparency and the persuasion patterns that make reader support work \\u2014 plus the embeds that run on a static site.\",\"url\":\"https://content.media/guides/donation-funded-media/\",\"datePublished\":\"2026-09-01\",\"dateModified\":\"2026-09-21\",\"author\":{\"@type\":\"Organization\",\"name\":\"Content.Media\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Content.Media\"},\"articleSection\":\"Monetisation\"}</script>"
+body_extra: ""
+---
+{% raw %}<section class="band" style="padding-bottom:1rem">
+<div class="wrap" style="max-width:860px">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/guides/">Guides</a></li><li aria-current="page"><span>Monetisation</span></li></ol></nav><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://content.media/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://content.media/guides/"},{"@type":"ListItem","position":3,"name":"Monetisation","item":"https://content.media/guides/"}]}</script>
+<span class="eyebrow">Monetisation &middot; 8 min read</span>
+<h1>How Donation-Funded Media Actually Works</h1>
+<p class="lede">Tier design, price points, transparency and the persuasion patterns that make reader support work — plus the embeds that run on a static site.</p>
+<div class="byline">
+<div class="byline-av" aria-hidden="true">CM</div>
+<div>
+<p class="byline-name">The Content.Media research desk</p>
+<p class="byline-meta">Reviewed by Editorial board &middot; Updated September 2026 &middot;
+<a href="/editorial-policy/">How we research</a></p>
+</div>
+</div>
+</div>
+</section>
+<section class="band" style="padding-top:0">
+<div class="wrap article-layout">
+<article class="prose">
+<div class="callout"><h4>The short version</h4><p>Three tiers, the middle one highlighted, annual shown by default, and a published breakdown of where the money goes. Independence is the pitch.</p></div>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+<h2 id="pitch">The pitch is independence, not charity</h2>
+<p>Reader-funded publications that work all say a version of the same thing: no owner, no
+shareholders, no paywall. The reader is not being asked for a donation; they are being asked to
+keep a thing independent. That framing outperforms every variation of "support our work".</p>
+<p>Three patterns recur across the publications that fund themselves this way:</p>
+<ul>
+<li><strong>Scarcity of funder.</strong> "Founded and owned by the journalists who run it."</li>
+<li><strong>Cost anchoring to something trivial.</strong> "$1 a week", "less than a coffee".</li>
+<li><strong>Collective-action framing.</strong> "If everyone reading this gave $3, we'd be funded
+by Friday." It makes a small contribution feel decisive rather than pointless.</li>
+</ul>
+<h2 id="tiers">Tier design</h2>
+<p>Three tiers maximum. Middle tier visually highlighted and labelled "most popular". Annual shown
+as the default with the monthly equivalent in small text and an explicit saving. Typical current
+shape for an independent publication:</p>
+<table>
+<thead><tr><th>Tier</th><th>Monthly</th><th>Annual</th><th>What it buys</th></tr></thead>
+<tbody>
+<tr><td>Free</td><td>$0</td><td>$0</td><td>Everything. The free tier makes paying a choice, not a gate.</td></tr>
+<tr><td>Supporter</td><td>$8 – $10</td><td>$79 – $100</td><td>Name on the supporters page, early access, ad-light reading</td></tr>
+<tr><td>Superfan / Patron</td><td>$80 – $100</td><td>$800 – $1,000</td><td>Quarterly open financials call, direct line, credit</td></tr>
+</tbody></table>
+<p>One-off amounts should be four to ten times the monthly tier: $25 / $50 / $100 / other.</p>
+<h2 id="ux">Frequency toggle and defaults</h2>
+<p>A segmented pill control — Monthly | Annual | One-time — that swaps the amount chips in place
+without navigating. Pre-select recurring. Put a "save 17%" badge on annual. Under the button:
+"Cancel any time. Secure payment. You'll get a receipt."</p>
+<h2 id="transparency">Publish where the money goes</h2>
+<p>Three formats work. A percentage breakdown; a named-cost list ("$60 covers one day of a
+researcher's time"); or a quarterly public revenue post. The last is the strongest and the least
+used — it converts supporters into people who feel like shareholders, because functionally they are.</p>
+<h2 id="goals">Goals and progress bars</h2>
+<p>Use them for campaigns, not on the evergreen page. Count-based goals ("1,842 of 3,000
+supporters") outperform dollar goals for small publications because the denominator looks
+reachable. Always attach a deadline — a bar with no end date reads as static and stops converting
+within a week.</p>
+<h2 id="embeds">What works on a static site</h2>
+<p>No backend required for any of these:</p>
+<ul>
+<li><strong>Stripe Payment Links</strong> — create a product with one-time and recurring prices in
+the dashboard, optionally "customer chooses price", and use the resulting URL as a plain link. The
+cleanest option, and the one to build the primary button on.</li>
+<li><strong>Buy Me a Coffee</strong> — a static image link, or a floating widget script.</li>
+<li><strong>Ko-fi</strong> — an inline iframe panel or an overlay widget. 0% platform fee on donations.</li>
+<li><strong>PayPal hosted button</strong> — a plain HTML form posting a hosted button ID.</li>
+<li><strong>GitHub Sponsors</strong> — a link, plus <code>FUNDING.yml</code> in the repo.</li>
+<li><strong>Open Collective</strong> — donate button, contributor banner and backers badge, all
+script or object tags, with every expense public by default.</li>
+</ul>
+<p>Run at least two rails. Payment preference is regional, and a single provider is a single point
+of failure for your entire revenue line.</p>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+<div class="poll" data-poll="donation-funded-media">
+<span>Did this page solve your problem?</span>
+<div class="poll-btns">
+<button type="button" data-v="yes">Yes</button>
+<button type="button" data-v="no">No</button>
+</div>
+<p class="poll-thanks" hidden>Thanks — noted. <a href="/contact/">Tell us what was missing</a>.</p>
+</div>
+</article>
+<aside class="sidebar">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#pitch">The pitch is independence, not charity</a></li><li><a href="#tiers">Tier design</a></li><li><a href="#ux">Frequency toggle and defaults</a></li><li><a href="#transparency">Publish where the money goes</a></li><li><a href="#goals">Goals and progress bars</a></li><li><a href="#embeds">What works on a static site</a></li></ul></nav>
+<!-- ad slot: sidebar (sidebar) — set ADS['publisher'] in _src/config.py -->
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Free weekly brief</h3>
+<p class="small muted">Benchmark changes and payout shifts, every Tuesday. Free.</p>
+<form class="cm-form" data-form="newsletter">
+<input name="email" type="email" required placeholder="you@company.com">
+<button class="btn btn--primary btn--block" type="submit" style="margin-top:.5rem">Subscribe</button>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</div>
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Want this done for you?</h3>
+<p class="small muted">We build and run content programmes end to end.</p>
+<a class="btn btn--primary btn--block" href="/services/#quote">Get a costed plan</a>
+</div>
+</aside>
+</div>
+</section>
+<section class="band band--alt">
+<div class="wrap">
+<div class="sec-head">
+<div><span class="eyebrow">Keep reading</span><h2>Related guides</h2></div><a class="sec-link" href="/guides/">All guides &rarr;</a>
+</div>
+<div class="grid g3"><article class="card"><span class="tag tag--brand">Monetisation</span><h3><a class="stretch" href="/guides/adsense-approval-checklist/">The AdSense Approval Checklist That Actually Works in 2026</a></h3><p>Every page, policy and signal Google looks for before approving a site for AdSense, plus the two rejection reasons that account for almost everything.</p></article><article class="card"><span class="tag tag--brand">Pricing</span><h3><a class="stretch" href="/guides/creator-rate-card-guide/">How to Build a Creator Rate Card You Can Defend</a></h3><p>A complete pricing framework for sponsorships: base rates, the multipliers that matter, usage rights, exclusivity, and the negotiation script.</p></article><article class="card"><span class="tag tag--brand">Data</span><h3><a class="stretch" href="/guides/youtube-rpm-by-niche/">YouTube RPM by Niche: The 2026 Numbers</a></h3><p>Creator take-home RPM for 14 niches with geography multipliers, and the three variables that move it more than anything else.</p></article></div>
+</div>
+</section>
+<section class="cta-band">
+<div class="wrap cta-band__inner">
+<div>
+<h2>Stop reading about it. Have it built.</h2>
+<p>Tell us the shape of the problem and we come back with scope and a number.</p>
+</div>
+<div class="cta-band__actions">
+<a class="btn btn--primary btn--lg" href="/services/#quote">Get my content plan</a>
+<a class="btn btn--ghost btn--lg" href="/services/#pricing">See what we charge</a>
+</div>
+</div>
+</section>{% endraw %}
