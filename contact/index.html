@@ -1,0 +1,46 @@
+---
+layout: "default"
+title: "Contact Content.Media"
+description: "Corrections, data requests, advertising, services and domain enquiries. We reply within one business day."
+canonical: "/contact/"
+head_extra: ""
+body_extra: ""
+---
+{% raw %}<section class="band">
+<div class="wrap article-layout">
+<article>
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page"><span>Contact</span></li></ol></nav><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://content.media/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://content.media/contact/"}]}</script>
+<h1>Contact</h1>
+<p class="lede">One inbox, monitored on business days. Corrections jump the queue — if a
+number on this site is wrong, telling us is the single most useful thing you can do.</p>
+<form class="cm-form panel" data-form="contact" novalidate>
+<h3>Send us a message</h3>
+<div class="field"><label for="lf-name">Name <span class="req" aria-hidden="true">*</span></label><input id="lf-name" name="name" type="text" required placeholder="" autocomplete="name"></div><div class="field"><label for="lf-email">Email <span class="req" aria-hidden="true">*</span></label><input id="lf-email" name="email" type="email" required placeholder="" autocomplete="email"></div><div class="field"><label for="lf-topic">What is this about? <span class="req" aria-hidden="true">*</span></label><select id="lf-topic" name="topic" required><option value="">Choose one…</option><option>A correction — a number looks wrong</option><option>Data request — CSV or a custom cut</option><option>Advertising or sponsorship</option><option>Submitting or updating a tool listing</option><option>Services — I want a content plan</option><option>Press or interview request</option><option>Contest question</option><option>Buying this website or domain name</option><option>Something else</option></select></div><div class="field"><label for="lf-company">Company (optional)</label><input id="lf-company" name="company" type="text" placeholder="" autocomplete="organization"></div><div class="field"><label for="lf-message">Message</label><textarea id="lf-message" name="message" rows="3" placeholder="Be specific — it gets you a faster and better answer."></textarea></div>
+<button class="btn btn--primary btn--block btn--lg" type="submit">Send message</button>
+<p class="microcopy">We reply to most messages within one business day. Corrections get priority over everything else.</p>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+<p class="small muted" style="margin-top:1rem">Prefer email?
+<a class="maillink" href="/contact/" data-mail="1" data-subject="Content.Media enquiry">Open a message in your mail app</a> — the address is
+assembled in your browser, which is how we keep it away from scrapers.</p>
+</article>
+<aside class="sidebar">
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Buying this website or domain?</h3>
+<p class="small muted">Enquiries about acquiring <strong>content.media</strong> go here.</p>
+<a class="btn btn--primary btn--block" href="https://web.works/contact"
+rel="noopener" target="_blank">web.works/contact</a>
+</div>
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Fastest routes</h3>
+<ul class="ticks small">
+<li><a href="/services/#quote">Content plan</a> — one business day</li>
+<li><a href="/advertise/">Media kit</a> — rate card by email</li>
+<li><a href="/directory/submit/">Tool submission</a> — 48h on paid tiers</li>
+<li><a href="/jobs/post/">Post a job</a> — reviewed same day</li>
+</ul>
+</div>
+<!-- ad slot: sidebar (sidebar) — set ADS['publisher'] in _src/config.py -->
+</aside>
+</div>
+</section>{% endraw %}
