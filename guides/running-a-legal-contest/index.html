@@ -1,0 +1,143 @@
+---
+layout: "default"
+title: "Running a Contest or Giveaway Without Breaking the Law | Content.Media"
+description: "The official rules elements required in the US and Canada, entry mechanics that survive a challenge, and how to run it all from a static site."
+canonical: "/guides/running-a-legal-contest/"
+head_extra: "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Running a Contest or Giveaway Without Breaking the Law\",\"description\":\"The official rules elements required in the US and Canada, entry mechanics that survive a challenge, and how to run it all from a static site.\",\"url\":\"https://content.media/guides/running-a-legal-contest/\",\"datePublished\":\"2026-09-01\",\"dateModified\":\"2026-09-21\",\"author\":{\"@type\":\"Organization\",\"name\":\"Content.Media\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Content.Media\"},\"articleSection\":\"Growth\"}</script>"
+body_extra: ""
+---
+{% raw %}<section class="band" style="padding-bottom:1rem">
+<div class="wrap" style="max-width:860px">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/guides/">Guides</a></li><li aria-current="page"><span>Growth</span></li></ol></nav><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://content.media/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://content.media/guides/"},{"@type":"ListItem","position":3,"name":"Growth","item":"https://content.media/guides/"}]}</script>
+<span class="eyebrow">Growth &middot; 9 min read</span>
+<h1>Running a Contest or Giveaway Without Breaking the Law</h1>
+<p class="lede">The official rules elements required in the US and Canada, entry mechanics that survive a challenge, and how to run it all from a static site.</p>
+<div class="byline">
+<div class="byline-av" aria-hidden="true">CM</div>
+<div>
+<p class="byline-name">The Content.Media research desk</p>
+<p class="byline-meta">Reviewed by Editorial board &middot; Updated September 2026 &middot;
+<a href="/editorial-policy/">How we research</a></p>
+</div>
+</div>
+</div>
+</section>
+<section class="band" style="padding-top:0">
+<div class="wrap article-layout">
+<article class="prose">
+<div class="callout"><h4>The short version</h4><p>No purchase necessary, a free alternate method of entry, published odds and a named sponsor. In Canada, a skill-testing question is mandatory or it is an illegal lottery.</p></div>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+<div class="callout"><h4>Not legal advice</h4><p>This is a practitioner's checklist, not counsel.
+Prize pools above a few thousand dollars, or contests open across many jurisdictions, need a lawyer
+and possibly registration and bonding. Get that review before you publish.</p></div>
+<h2 id="structure">The three legal shapes</h2>
+<table>
+<thead><tr><th>Type</th><th>Winner chosen by</th><th>Consideration allowed?</th></tr></thead>
+<tbody>
+<tr><td>Sweepstakes</td><td>Chance</td><td>No — must be free to enter</td></tr>
+<tr><td>Contest</td><td>Skill, judged</td><td>Sometimes, jurisdiction-dependent</td></tr>
+<tr><td>Lottery</td><td>Chance</td><td>Yes — and illegal for you to run</td></tr>
+</tbody></table>
+<p>If entry requires payment <em>and</em> the winner is chosen at random, you are running a lottery.
+Remove one of the two. In practice that means: free to enter, always.</p>
+<h2 id="rules">Official rules: the elements</h2>
+<ol>
+<li>"NO PURCHASE NECESSARY. A PURCHASE WILL NOT INCREASE YOUR CHANCES OF WINNING."</li>
+<li>"VOID WHERE PROHIBITED."</li>
+<li>Eligibility — age, residency, and exclusion of employees, contractors and immediate family.</li>
+<li>Entry period with start and end dates <strong>and the time zone</strong>.</li>
+<li>A free alternate method of entry (AMOE) with equal standing — typically a mail-in entry.</li>
+<li>Prize description, approximate retail value, and "odds of winning depend on the number of
+eligible entries received".</li>
+<li>Winner selection method and notification timeline.</li>
+<li>Sponsor's full legal name and address.</li>
+<li>Publicity and privacy release.</li>
+<li>Governing law and dispute resolution.</li>
+<li>How to request the winners list.</li>
+<li>Tax note — in the US, prizes of $600 or more trigger a 1099-MISC.</li>
+</ol>
+<p>New York and Florida require registration and bonding when total prize value exceeds $5,000.
+Rhode Island has its own threshold for retail sweepstakes.</p>
+<h2 id="canada">Canada adds three things</h2>
+<ul>
+<li><strong>A mathematical skill-testing question is mandatory.</strong> Without it, a chance-based
+promotion is an illegal lottery under the Criminal Code. A four-step arithmetic question is the
+convention.</li>
+<li><strong>Odds must be disclosed</strong> and prize value stated in CAD.</li>
+<li><strong>Quebec</strong> requires French-language materials and RACJ registration with fees —
+which is why most small publishers write "excluding Quebec".</li>
+</ul>
+<p>CASL also means entry is not marketing consent. You need a separate, unbundled opt-in checkbox
+if you intend to email entrants afterwards.</p>
+<h2 id="mechanics">Entry mechanics that survive a challenge</h2>
+<p>Only award bonus entries for actions you can actually verify. "Follow us on three platforms" is
+unverifiable at scale and indefensible if a losing entrant complains. Referral links with unique
+codes are verifiable and drive the most growth. Cap daily bonus entries to keep the leaderboard
+from being farmed.</p>
+<h2 id="static">Running it on a static site</h2>
+<ul>
+<li><strong>Entries:</strong> an embedded form service, with responses landing in a spreadsheet.
+Sufficient for a documented random draw.</li>
+<li><strong>Draw:</strong> use a documented RNG with a witness, and publish the method in the rules
+before the contest opens. Record it if the prize is significant.</li>
+<li><strong>Referrals and leaderboards:</strong> a third-party giveaway platform gives you referral
+tracking, fraud screening and a live leaderboard from a single embed. Self-rolled leaderboards on a
+static site cannot dedupe and will be gamed.</li>
+<li><strong>Winner announcement:</strong> a permanent URL, published on the date you promised, with
+the winners list available on request. Nothing damages a small publication faster than a contest
+that quietly never announced a winner.</li>
+</ul>
+<h2 id="worth">Is it worth it?</h2>
+<p>Only if the prize is relevant to the niche. A generic tech giveaway buys a list of people who
+enter giveaways. A prize that only your actual audience wants — a year of the tool they already
+use, a paid consultation, a production budget — buys subscribers who open.</p>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+<div class="poll" data-poll="running-a-legal-contest">
+<span>Did this page solve your problem?</span>
+<div class="poll-btns">
+<button type="button" data-v="yes">Yes</button>
+<button type="button" data-v="no">No</button>
+</div>
+<p class="poll-thanks" hidden>Thanks — noted. <a href="/contact/">Tell us what was missing</a>.</p>
+</div>
+</article>
+<aside class="sidebar">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#structure">The three legal shapes</a></li><li><a href="#rules">Official rules: the elements</a></li><li><a href="#canada">Canada adds three things</a></li><li><a href="#mechanics">Entry mechanics that survive a challenge</a></li><li><a href="#static">Running it on a static site</a></li><li><a href="#worth">Is it worth it?</a></li></ul></nav>
+<!-- ad slot: sidebar (sidebar) — set ADS['publisher'] in _src/config.py -->
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Free weekly brief</h3>
+<p class="small muted">Benchmark changes and payout shifts, every Tuesday. Free.</p>
+<form class="cm-form" data-form="newsletter">
+<input name="email" type="email" required placeholder="you@company.com">
+<button class="btn btn--primary btn--block" type="submit" style="margin-top:.5rem">Subscribe</button>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</div>
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Want this done for you?</h3>
+<p class="small muted">We build and run content programmes end to end.</p>
+<a class="btn btn--primary btn--block" href="/services/#quote">Get a costed plan</a>
+</div>
+</aside>
+</div>
+</section>
+<section class="band band--alt">
+<div class="wrap">
+<div class="sec-head">
+<div><span class="eyebrow">Keep reading</span><h2>Related guides</h2></div><a class="sec-link" href="/guides/">All guides &rarr;</a>
+</div>
+<div class="grid g3"><article class="card"><span class="tag tag--brand">Monetisation</span><h3><a class="stretch" href="/guides/adsense-approval-checklist/">The AdSense Approval Checklist That Actually Works in 2026</a></h3><p>Every page, policy and signal Google looks for before approving a site for AdSense, plus the two rejection reasons that account for almost everything.</p></article><article class="card"><span class="tag tag--brand">Pricing</span><h3><a class="stretch" href="/guides/creator-rate-card-guide/">How to Build a Creator Rate Card You Can Defend</a></h3><p>A complete pricing framework for sponsorships: base rates, the multipliers that matter, usage rights, exclusivity, and the negotiation script.</p></article><article class="card"><span class="tag tag--brand">Data</span><h3><a class="stretch" href="/guides/youtube-rpm-by-niche/">YouTube RPM by Niche: The 2026 Numbers</a></h3><p>Creator take-home RPM for 14 niches with geography multipliers, and the three variables that move it more than anything else.</p></article></div>
+</div>
+</section>
+<section class="cta-band">
+<div class="wrap cta-band__inner">
+<div>
+<h2>Stop reading about it. Have it built.</h2>
+<p>Tell us the shape of the problem and we come back with scope and a number.</p>
+</div>
+<div class="cta-band__actions">
+<a class="btn btn--primary btn--lg" href="/services/#quote">Get my content plan</a>
+<a class="btn btn--ghost btn--lg" href="/services/#pricing">See what we charge</a>
+</div>
+</div>
+</section>{% endraw %}
