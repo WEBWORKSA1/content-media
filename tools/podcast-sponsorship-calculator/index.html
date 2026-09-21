@@ -1,0 +1,148 @@
+---
+layout: "default"
+title: "Podcast Sponsorship Rate Calculator — Pre-roll, Mid-roll & Post-roll CPM"
+description: "Price podcast ad inventory on IAB v2.1 downloads with real CPM ranges by slot position and host-read premium."
+canonical: "/tools/podcast-sponsorship-calculator/"
+head_extra: "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebApplication\",\"name\":\"Podcast sponsorship calculator\",\"url\":\"https://content.media/tools/podcast-sponsorship-calculator/\",\"applicationCategory\":\"BusinessApplication\",\"operatingSystem\":\"Any\",\"description\":\"Price podcast ad inventory on IAB v2.1 downloads with real CPM ranges by slot position and host-read premium.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Content.Media\"}}</script>"
+body_extra: ""
+---
+{% raw %}<section class="band" style="padding-bottom:1.5rem">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/tools/">Free tools</a></li><li aria-current="page"><span>Podcast sponsorship calculator</span></li></ol></nav><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://content.media/"},{"@type":"ListItem","position":2,"name":"Free tools","item":"https://content.media/tools/"},{"@type":"ListItem","position":3,"name":"Podcast sponsorship calculator","item":"https://content.media/tools/podcast-sponsorship-calculator/"}]}</script>
+<h1>Podcast sponsorship calculator</h1>
+<p class="lede">Podcast advertising is sold on downloads, per slot, on a CPM basis. Position matters more than most hosts realise: a mid-roll is worth roughly double a post-roll.</p>
+<div class="byline">
+<div class="byline-av" aria-hidden="true">CM</div>
+<div>
+<p class="byline-name">The Content.Media research desk</p>
+<p class="byline-meta">Reviewed by Editorial board &middot; Updated September 2026 &middot;
+<a href="/editorial-policy/">How we research</a></p>
+</div>
+</div>
+<div class="calc" data-calc="podcast">
+<div class="calc-head">
+<h2 style="font-size:1rem">Podcast sponsorship calculator</h2>
+<div class="chipset">
+<button class="chip" type="button" data-reset>Reset</button>
+<button class="chip" type="button" data-copy="[data-out]">Copy result</button>
+<button class="chip" type="button" data-share>Share</button>
+</div>
+</div>
+<div class="calc-body">
+<div class="calc-inputs"><div class="calc-row"><label for="podcast-sponsorship-calculator-downloads">Average downloads per episode (30-day, IAB v2.1)<output class="val" data-for="downloads" data-suffix=""></output></label><input id="podcast-sponsorship-calculator-downloads" name="downloads" type="range" min="100" max="2000000" step="100" value="12000" data-def="12000"></div><div class="calc-row"><label for="podcast-sponsorship-calculator-episodes">Episodes per month<output class="val" data-for="episodes" data-suffix=""></output></label><input id="podcast-sponsorship-calculator-episodes" name="episodes" type="range" min="1" max="30" step="1" value="4" data-def="4"></div><div class="calc-row"><label for="podcast-sponsorship-calculator-preroll">Pre-roll slots per episode<output class="val" data-for="preroll" data-suffix=""></output></label><input id="podcast-sponsorship-calculator-preroll" name="preroll" type="range" min="0" max="3" step="1" value="1" data-def="1"></div><div class="calc-row"><label for="podcast-sponsorship-calculator-midroll">Mid-roll slots per episode<output class="val" data-for="midroll" data-suffix=""></output></label><input id="podcast-sponsorship-calculator-midroll" name="midroll" type="range" min="0" max="4" step="1" value="2" data-def="2"></div><div class="calc-row"><label for="podcast-sponsorship-calculator-postroll">Post-roll slots per episode<output class="val" data-for="postroll" data-suffix=""></output></label><input id="podcast-sponsorship-calculator-postroll" name="postroll" type="range" min="0" max="2" step="1" value="1" data-def="1"></div><div class="calc-row"><label for="podcast-sponsorship-calculator-hostread">Host-read or produced spot?</label><select id="podcast-sponsorship-calculator-hostread" name="hostread" data-def="yes"><option value="yes" selected>Host-read (+35%)</option><option value="no">Produced / dynamic insertion</option></select></div>
+<p class="calc-note">Nothing you type is sent anywhere. Everything runs in your browser.</p>
+</div>
+<div class="calc-output" data-out></div>
+</div>
+</div>
+<!-- ad slot: tool_result (leaderboard) — set ADS['publisher'] in _src/config.py -->
+</div>
+</section>
+<section class="band" style="padding-top:0">
+<div class="wrap article-layout">
+<article class="prose">
+<h2 id="cpm">CPM by slot position</h2>
+<table>
+<thead><tr><th>Slot</th><th>CPM range</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Pre-roll</td><td>$15 – $25</td><td>Highest delivery, lowest attention</td></tr>
+<tr><td>Mid-roll</td><td>$22 – $40</td><td>The premium inventory. Sell these first.</td></tr>
+<tr><td>Post-roll</td><td>$10 – $18</td><td>Bundle it; rarely sells alone</td></tr>
+</tbody></table>
+<p>Host-read spots carry a ~35% premium over produced or dynamically inserted spots, because the
+endorsement is the product. That premium disappears if you read copy you obviously do not believe.</p>
+<h2 id="downloads">Count downloads honestly</h2>
+<p>Use IAB Tech Lab v2.1 certified numbers: unique downloads in the first 30 days, filtered for bots
+and partial requests. Anything else — raw requests, lifetime totals, "listens" — is not sellable
+inventory, and a buyer with an agency behind them will catch it on the first reconciliation.</p>
+<h2 id="selling">Selling above the calculator</h2>
+<ul>
+<li><strong>Sell quarters, not episodes.</strong> A 12-episode package at a 10% discount beats
+chasing four one-offs, and advertisers need frequency to see a result anyway.</li>
+<li><strong>Offer a promo code or vanity URL.</strong> Attribution is podcasting's weakness; solving
+it for the buyer is worth more than a CPM point.</li>
+<li><strong>Publish audience composition.</strong> Job titles and seniority move B2B rates more than
+download counts do. A 4,000-download show with a room full of CTOs outsells a 40,000-download
+general-interest show.</li>
+<li><strong>Bundle the newsletter and the YouTube cut.</strong> Price the bundle with our
+<a href="/tools/newsletter-sponsorship-calculator/">newsletter calculator</a>.</li>
+</ul>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+<section class="faq" id="faq"><h2>Frequently asked questions</h2><div class="faq-list"><details class="faq-item" open><summary><span>How many downloads do I need to get sponsors?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Networks typically start around 5,000 downloads per episode. Direct sales work far earlier — at 1,000 downloads in a tight B2B niche you can sell a quarter-long package to a relevant vendor at a premium CPM, because the audience is precisely the one they want.</p></div></details><details class="faq-item"><summary><span>Should I use dynamic ad insertion?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Yes, once you have a back catalogue. It lets you sell the archive and swap expired campaigns out. Keep host-read copy for your best inventory and use DAI for the rest.</p></div></details><details class="faq-item"><summary><span>What's a realistic fill rate?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Independent shows selling direct run at 30–60% fill. Assume 50% when you model revenue, and treat the calculator's output as gross inventory value, not guaranteed revenue.</p></div></details><details class="faq-item"><summary><span>Do video podcasts earn more?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>They earn from more places — YouTube ads, Shorts clips, and higher sponsorship rates for on-screen product placement. Production cost rises roughly 40–60%. It is usually worth it above 5,000 downloads.</p></div></details></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many downloads do I need to get sponsors?","acceptedAnswer":{"@type":"Answer","text":"Networks typically start around 5,000 downloads per episode. Direct sales work far earlier \u2014 at 1,000 downloads in a tight B2B niche you can sell a quarter-long package to a relevant vendor at a premium CPM, because the audience is precisely the one they want."}},{"@type":"Question","name":"Should I use dynamic ad insertion?","acceptedAnswer":{"@type":"Answer","text":"Yes, once you have a back catalogue. It lets you sell the archive and swap expired campaigns out. Keep host-read copy for your best inventory and use DAI for the rest."}},{"@type":"Question","name":"What's a realistic fill rate?","acceptedAnswer":{"@type":"Answer","text":"Independent shows selling direct run at 30\u201360% fill. Assume 50% when you model revenue, and treat the calculator's output as gross inventory value, not guaranteed revenue."}},{"@type":"Question","name":"Do video podcasts earn more?","acceptedAnswer":{"@type":"Answer","text":"They earn from more places \u2014 YouTube ads, Shorts clips, and higher sponsorship rates for on-screen product placement. Production cost rises roughly 40\u201360%. It is usually worth it above 5,000 downloads."}}]}</script></section>
+<div class="poll" data-poll="podcast-sponsorship-calculator">
+<span>Did this page solve your problem?</span>
+<div class="poll-btns">
+<button type="button" data-v="yes">Yes</button>
+<button type="button" data-v="no">No</button>
+</div>
+<p class="poll-thanks" hidden>Thanks — noted. <a href="/contact/">Tell us what was missing</a>.</p>
+</div>
+</article>
+<aside class="sidebar">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#formula">The formula</a></li><li><a href="#downloads">Count downloads honestly</a></li><li><a href="#selling">Selling above the calculator</a></li></ul></nav>
+<!-- ad slot: sidebar (sidebar) — set ADS['publisher'] in _src/config.py -->
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Want this done for you?</h3>
+<p class="small muted">We build and run content programmes using these exact models.</p>
+<a class="btn btn--primary btn--block" href="/services/#quote">Get a costed plan</a>
+</div>
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Free weekly brief</h3>
+<p class="small muted">Benchmark changes and payout shifts, every Tuesday.</p>
+<form class="cm-form" data-form="newsletter">
+<input name="email" type="email" required placeholder="you@company.com">
+<button class="btn btn--primary btn--block" type="submit" style="margin-top:.5rem">Subscribe</button>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</div>
+</aside>
+</div>
+</section>
+<section class="band band--alt">
+<div class="wrap">
+<section class="band" style="padding-top:1rem">
+<h2>Related calculators</h2>
+<div class="tool-strip"><a href="/tools/youtube-money-calculator/"><span class="n">1</span>YouTube money calculator</a><a href="/tools/youtube-shorts-rpm-calculator/"><span class="n">2</span>YouTube Shorts RPM calculator</a><a href="/tools/tiktok-earnings-calculator/"><span class="n">3</span>TikTok earnings calculator</a><a href="/tools/instagram-engagement-calculator/"><span class="n">4</span>Instagram engagement rate & rate calculator</a><a href="/tools/creator-rate-card-calculator/"><span class="n">5</span>Creator rate card builder</a><a href="/tools/cpm-rpm-cpc-calculator/"><span class="n">6</span>CPM, RPM, CPC & ROAS calculator</a></div>
+</section>
+<section class="newsletter newsletter--narrow" id="newsletter">
+<div class="newsletter__copy">
+<span class="eyebrow">Free weekly</span>
+<h2>The weekly Content.Media brief</h2>
+<p>Benchmarks, rate changes and platform payout shifts — decoded in five minutes. Read by creators, publishers and brand marketers. One email a week, unsubscribe in one click.</p>
+<ul class="magnet-list"><li>The <strong>2026 benchmark dataset</strong> as a CSV — <a href="/assets/data/creator-benchmarks-2026.csv" download>download it now, no signup</a></li><li>Every back issue, from the first one</li><li>Reader discount codes when tools offer them</li><li>First look at contests and prize drops</li></ul>
+</div>
+<form class="cm-form newsletter__form" data-form="newsletter" novalidate>
+<label class="sr-only" for="nl-email-narrow">Email address</label>
+<input id="nl-email-narrow" name="email" type="email" required
+placeholder="you@company.com" autocomplete="email">
+<label class="sr-only" for="nl-role-narrow">I am a…</label>
+<select id="nl-role-narrow" name="role" required>
+<option value="">I am a…</option>
+<option>Creator / channel owner</option>
+<option>Publisher / media owner</option>
+<option>Brand or in-house marketer</option>
+<option>Agency / freelancer</option>
+<option>Investor / analyst</option>
+</select>
+<button class="btn btn--primary btn--block" type="submit">Send me the brief</button>
+<label class="checkline">
+<input type="checkbox" name="consent" value="yes" required>
+<span>Email me the weekly brief and the rate card database. I can unsubscribe any time.</span>
+</label>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</section>
+</div>
+</section>
+<section class="cta-band">
+<div class="wrap cta-band__inner">
+<div>
+<h2>Numbers are the easy part. Shipping the content is the hard part.</h2>
+<p>Hand us the programme and we will build it, staff it and run it.</p>
+</div>
+<div class="cta-band__actions">
+<a class="btn btn--primary btn--lg" href="/services/#quote">Get my content plan</a>
+<a class="btn btn--ghost btn--lg" href="/services/#pricing">See what we charge</a>
+</div>
+</div>
+</section>{% endraw %}
