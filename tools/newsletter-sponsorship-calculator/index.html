@@ -1,0 +1,147 @@
+---
+layout: "default"
+title: "Newsletter Sponsorship Rate Calculator — Price on Opens, Not List Size"
+description: "Price newsletter ad slots on opens with CPM ranges for classified, primary and dedicated placements, plus the B2B premium."
+canonical: "/tools/newsletter-sponsorship-calculator/"
+head_extra: "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebApplication\",\"name\":\"Newsletter sponsorship calculator\",\"url\":\"https://content.media/tools/newsletter-sponsorship-calculator/\",\"applicationCategory\":\"BusinessApplication\",\"operatingSystem\":\"Any\",\"description\":\"Price newsletter ad slots on opens with CPM ranges for classified, primary and dedicated placements, plus the B2B premium.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Content.Media\"}}</script>"
+body_extra: ""
+---
+{% raw %}<section class="band" style="padding-bottom:1.5rem">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/tools/">Free tools</a></li><li aria-current="page"><span>Newsletter sponsorship calculator</span></li></ol></nav><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://content.media/"},{"@type":"ListItem","position":2,"name":"Free tools","item":"https://content.media/tools/"},{"@type":"ListItem","position":3,"name":"Newsletter sponsorship calculator","item":"https://content.media/tools/newsletter-sponsorship-calculator/"}]}</script>
+<h1>Newsletter sponsorship calculator</h1>
+<p class="lede">Sell on opens, never on list size. Advertisers who buy on sends and get burned once never come back, and word travels fast in a small market.</p>
+<div class="byline">
+<div class="byline-av" aria-hidden="true">CM</div>
+<div>
+<p class="byline-name">The Content.Media research desk</p>
+<p class="byline-meta">Reviewed by Editorial board &middot; Updated September 2026 &middot;
+<a href="/editorial-policy/">How we research</a></p>
+</div>
+</div>
+<div class="calc" data-calc="newsletter">
+<div class="calc-head">
+<h2 style="font-size:1rem">Newsletter sponsorship calculator</h2>
+<div class="chipset">
+<button class="chip" type="button" data-reset>Reset</button>
+<button class="chip" type="button" data-copy="[data-out]">Copy result</button>
+<button class="chip" type="button" data-share>Share</button>
+</div>
+</div>
+<div class="calc-body">
+<div class="calc-inputs"><div class="calc-row"><label for="newsletter-sponsorship-calculator-subscribers">Subscribers<output class="val" data-for="subscribers" data-suffix=""></output></label><input id="newsletter-sponsorship-calculator-subscribers" name="subscribers" type="range" min="500" max="5000000" step="500" value="25000" data-def="25000"></div><div class="calc-row"><label for="newsletter-sponsorship-calculator-openrate">Open rate (%)<output class="val" data-for="openrate" data-suffix=""></output></label><input id="newsletter-sponsorship-calculator-openrate" name="openrate" type="range" min="5" max="90" step="1" value="42" data-def="42"></div><div class="calc-row"><label for="newsletter-sponsorship-calculator-issues">Issues per month<output class="val" data-for="issues" data-suffix=""></output></label><input id="newsletter-sponsorship-calculator-issues" name="issues" type="range" min="1" max="30" step="1" value="4" data-def="4"></div><div class="calc-row"><label for="newsletter-sponsorship-calculator-slot">Placement</label><select id="newsletter-sponsorship-calculator-slot" name="slot" data-def="primary"><option value="classified">Classified / text link</option><option value="primary" selected>Primary sponsor slot</option><option value="dedicated">Dedicated send</option></select></div><div class="calc-row"><label for="newsletter-sponsorship-calculator-audience">Audience type</label><select id="newsletter-sponsorship-calculator-audience" name="audience" data-def="consumer"><option value="consumer" selected>Consumer / general</option><option value="b2b">B2B decision-makers (+80%)</option></select></div>
+<p class="calc-note">Nothing you type is sent anywhere. Everything runs in your browser.</p>
+</div>
+<div class="calc-output" data-out></div>
+</div>
+</div>
+<!-- ad slot: tool_result (leaderboard) — set ADS['publisher'] in _src/config.py -->
+</div>
+</section>
+<section class="band" style="padding-top:0">
+<div class="wrap article-layout">
+<article class="prose">
+<h2 id="cpm">CPM by placement, on opens</h2>
+<table>
+<thead><tr><th>Placement</th><th>CPM on opens</th><th>Format</th></tr></thead>
+<tbody>
+<tr><td>Classified / text link</td><td>$8 – $18</td><td>One line, 2–4 per issue</td></tr>
+<tr><td>Primary sponsor slot</td><td>$25 – $60</td><td>One per issue, ~350 characters + image + tracked link</td></tr>
+<tr><td>Dedicated send</td><td>$45 – $120</td><td>Whole email; cap at one per month</td></tr>
+</tbody></table>
+<p>B2B decision-maker audiences carry roughly an 80% premium. A 12,000-subscriber operations
+newsletter read by heads of function outsells a 100,000-subscriber consumer list, and both sides
+know it.</p>
+<h2 id="mediakit">The media kit is a lead magnet</h2>
+<p>Publish four numbers openly — subscribers, open rate, click rate, audience composition — and gate
+the full rate card behind a short form. The form captures the advertiser as a lead; the open numbers
+pre-qualify them so you stop taking calls from people who cannot afford you. Copy the structure:</p>
+<ul>
+<li>Three headline metrics above the fold, with growth rate</li>
+<li>Audience composition: seniority, function, company size, country split</li>
+<li>Format specs with exact character limits and image dimensions</li>
+<li>A price floor and a minimum term — "from $X per issue, three-issue minimum"</li>
+<li>A logo wall of past sponsors, and a waitlist line if you are booked</li>
+</ul>
+<h2 id="ethics">Two rules that protect the asset</h2>
+<p>Label every sponsored slot unambiguously, and cap sponsored volume at one primary slot per issue.
+The list is the asset; a burned list cannot be rebuilt with money.</p>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+<section class="faq" id="faq"><h2>Frequently asked questions</h2><div class="faq-list"><details class="faq-item" open><summary><span>How much can I charge for a newsletter sponsorship?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>A 25,000-subscriber list at a 42% open rate has ~10,500 opens. At a $25–$60 primary-slot CPM that is $263–$630 per issue, or $1,050–$2,520 a month at weekly cadence. Double it for a B2B decision-maker audience.</p></div></details><details class="faq-item"><summary><span>Should I price on subscribers or opens?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Opens. Pricing on list size rewards you for dead addresses and punishes you for cleaning the list. Sophisticated buyers price on opens regardless of what you quote, so quoting it first makes you look like you know the market.</p></div></details><details class="faq-item"><summary><span>How many sponsors per issue is too many?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>One primary plus two classifieds is the ceiling before unsubscribes rise measurably. Dedicated sends should be capped at one a month and clearly labelled.</p></div></details><details class="faq-item"><summary><span>What open rate should I report after privacy changes?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Report it, state that it includes Apple Mail Privacy Protection inflation, and lead with click rate as the honest engagement metric. Buyers respect the disclosure and it defuses the objection before they raise it.</p></div></details></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much can I charge for a newsletter sponsorship?","acceptedAnswer":{"@type":"Answer","text":"A 25,000-subscriber list at a 42% open rate has ~10,500 opens. At a $25\u2013$60 primary-slot CPM that is $263\u2013$630 per issue, or $1,050\u2013$2,520 a month at weekly cadence. Double it for a B2B decision-maker audience."}},{"@type":"Question","name":"Should I price on subscribers or opens?","acceptedAnswer":{"@type":"Answer","text":"Opens. Pricing on list size rewards you for dead addresses and punishes you for cleaning the list. Sophisticated buyers price on opens regardless of what you quote, so quoting it first makes you look like you know the market."}},{"@type":"Question","name":"How many sponsors per issue is too many?","acceptedAnswer":{"@type":"Answer","text":"One primary plus two classifieds is the ceiling before unsubscribes rise measurably. Dedicated sends should be capped at one a month and clearly labelled."}},{"@type":"Question","name":"What open rate should I report after privacy changes?","acceptedAnswer":{"@type":"Answer","text":"Report it, state that it includes Apple Mail Privacy Protection inflation, and lead with click rate as the honest engagement metric. Buyers respect the disclosure and it defuses the objection before they raise it."}}]}</script></section>
+<div class="poll" data-poll="newsletter-sponsorship-calculator">
+<span>Did this page solve your problem?</span>
+<div class="poll-btns">
+<button type="button" data-v="yes">Yes</button>
+<button type="button" data-v="no">No</button>
+</div>
+<p class="poll-thanks" hidden>Thanks — noted. <a href="/contact/">Tell us what was missing</a>.</p>
+</div>
+</article>
+<aside class="sidebar">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#formula">The formula</a></li><li><a href="#mediakit">The media kit is a lead magnet</a></li><li><a href="#ethics">Two rules that protect the asset</a></li></ul></nav>
+<!-- ad slot: sidebar (sidebar) — set ADS['publisher'] in _src/config.py -->
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Want this done for you?</h3>
+<p class="small muted">We build and run content programmes using these exact models.</p>
+<a class="btn btn--primary btn--block" href="/services/#quote">Get a costed plan</a>
+</div>
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Free weekly brief</h3>
+<p class="small muted">Benchmark changes and payout shifts, every Tuesday.</p>
+<form class="cm-form" data-form="newsletter">
+<input name="email" type="email" required placeholder="you@company.com">
+<button class="btn btn--primary btn--block" type="submit" style="margin-top:.5rem">Subscribe</button>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</div>
+</aside>
+</div>
+</section>
+<section class="band band--alt">
+<div class="wrap">
+<section class="band" style="padding-top:1rem">
+<h2>Related calculators</h2>
+<div class="tool-strip"><a href="/tools/youtube-money-calculator/"><span class="n">1</span>YouTube money calculator</a><a href="/tools/youtube-shorts-rpm-calculator/"><span class="n">2</span>YouTube Shorts RPM calculator</a><a href="/tools/tiktok-earnings-calculator/"><span class="n">3</span>TikTok earnings calculator</a><a href="/tools/instagram-engagement-calculator/"><span class="n">4</span>Instagram engagement rate & rate calculator</a><a href="/tools/creator-rate-card-calculator/"><span class="n">5</span>Creator rate card builder</a><a href="/tools/cpm-rpm-cpc-calculator/"><span class="n">6</span>CPM, RPM, CPC & ROAS calculator</a></div>
+</section>
+<section class="newsletter newsletter--narrow" id="newsletter">
+<div class="newsletter__copy">
+<span class="eyebrow">Free weekly</span>
+<h2>The weekly Content.Media brief</h2>
+<p>Benchmarks, rate changes and platform payout shifts — decoded in five minutes. Read by creators, publishers and brand marketers. One email a week, unsubscribe in one click.</p>
+<ul class="magnet-list"><li>The <strong>2026 benchmark dataset</strong> as a CSV — <a href="/assets/data/creator-benchmarks-2026.csv" download>download it now, no signup</a></li><li>Every back issue, from the first one</li><li>Reader discount codes when tools offer them</li><li>First look at contests and prize drops</li></ul>
+</div>
+<form class="cm-form newsletter__form" data-form="newsletter" novalidate>
+<label class="sr-only" for="nl-email-narrow">Email address</label>
+<input id="nl-email-narrow" name="email" type="email" required
+placeholder="you@company.com" autocomplete="email">
+<label class="sr-only" for="nl-role-narrow">I am a…</label>
+<select id="nl-role-narrow" name="role" required>
+<option value="">I am a…</option>
+<option>Creator / channel owner</option>
+<option>Publisher / media owner</option>
+<option>Brand or in-house marketer</option>
+<option>Agency / freelancer</option>
+<option>Investor / analyst</option>
+</select>
+<button class="btn btn--primary btn--block" type="submit">Send me the brief</button>
+<label class="checkline">
+<input type="checkbox" name="consent" value="yes" required>
+<span>Email me the weekly brief and the rate card database. I can unsubscribe any time.</span>
+</label>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</section>
+</div>
+</section>
+<section class="cta-band">
+<div class="wrap cta-band__inner">
+<div>
+<h2>Numbers are the easy part. Shipping the content is the hard part.</h2>
+<p>Hand us the programme and we will build it, staff it and run it.</p>
+</div>
+<div class="cta-band__actions">
+<a class="btn btn--primary btn--lg" href="/services/#quote">Get my content plan</a>
+<a class="btn btn--ghost btn--lg" href="/services/#pricing">See what we charge</a>
+</div>
+</div>
+</section>{% endraw %}
