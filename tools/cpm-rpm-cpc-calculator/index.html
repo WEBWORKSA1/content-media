@@ -1,0 +1,154 @@
+---
+layout: "default"
+title: "CPM RPM CPC CTR ROAS Calculator — All Ad Metrics in One Tool"
+description: "Convert between CPM, RPM, CPC, CTR, CPA and ROAS, and work out page RPM and revenue per session for a publisher site."
+canonical: "/tools/cpm-rpm-cpc-calculator/"
+head_extra: "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"WebApplication\",\"name\":\"CPM, RPM, CPC & ROAS calculator\",\"url\":\"https://content.media/tools/cpm-rpm-cpc-calculator/\",\"applicationCategory\":\"BusinessApplication\",\"operatingSystem\":\"Any\",\"description\":\"Convert between CPM, RPM, CPC, CTR, CPA and ROAS, and work out page RPM and revenue per session for a publisher site.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Content.Media\"}}</script>"
+body_extra: ""
+---
+{% raw %}<section class="band" style="padding-bottom:1.5rem">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/tools/">Free tools</a></li><li aria-current="page"><span>CPM, RPM, CPC & ROAS calculator</span></li></ol></nav><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://content.media/"},{"@type":"ListItem","position":2,"name":"Free tools","item":"https://content.media/tools/"},{"@type":"ListItem","position":3,"name":"CPM, RPM, CPC & ROAS calculator","item":"https://content.media/tools/cpm-rpm-cpc-calculator/"}]}</script>
+<h1>CPM, RPM, CPC & ROAS calculator</h1>
+<p class="lede">Eight advertising metrics, one set of inputs. Publishers should be watching RPM and revenue per session; buyers should be watching CPA and ROAS. Everyone confuses CPM with RPM.</p>
+<div class="byline">
+<div class="byline-av" aria-hidden="true">CM</div>
+<div>
+<p class="byline-name">The Content.Media research desk</p>
+<p class="byline-meta">Reviewed by Editorial board &middot; Updated September 2026 &middot;
+<a href="/editorial-policy/">How we research</a></p>
+</div>
+</div>
+<div class="calc" data-calc="cpm">
+<div class="calc-head">
+<h2 style="font-size:1rem">CPM, RPM, CPC & ROAS calculator</h2>
+<div class="chipset">
+<button class="chip" type="button" data-reset>Reset</button>
+<button class="chip" type="button" data-copy="[data-out]">Copy result</button>
+<button class="chip" type="button" data-share>Share</button>
+</div>
+</div>
+<div class="calc-body">
+<div class="calc-inputs"><div class="calc-row"><label for="cpm-rpm-cpc-calculator-impressions">Ad impressions</label><input id="cpm-rpm-cpc-calculator-impressions" name="impressions" type="number" value="500000" data-def="500000" min="0" step="any"></div><div class="calc-row"><label for="cpm-rpm-cpc-calculator-spend">Ad spend or cost ($)</label><input id="cpm-rpm-cpc-calculator-spend" name="spend" type="number" value="4200" data-def="4200" min="0" step="any"></div><div class="calc-row"><label for="cpm-rpm-cpc-calculator-clicks">Clicks</label><input id="cpm-rpm-cpc-calculator-clicks" name="clicks" type="number" value="6500" data-def="6500" min="0" step="any"></div><div class="calc-row"><label for="cpm-rpm-cpc-calculator-conversions">Conversions</label><input id="cpm-rpm-cpc-calculator-conversions" name="conversions" type="number" value="140" data-def="140" min="0" step="any"></div><div class="calc-row"><label for="cpm-rpm-cpc-calculator-revenue">Revenue attributed ($)</label><input id="cpm-rpm-cpc-calculator-revenue" name="revenue" type="number" value="18500" data-def="18500" min="0" step="any"></div><div class="calc-row"><label for="cpm-rpm-cpc-calculator-pageviews">Pageviews</label><input id="cpm-rpm-cpc-calculator-pageviews" name="pageviews" type="number" value="420000" data-def="420000" min="0" step="any"></div><div class="calc-row"><label for="cpm-rpm-cpc-calculator-sessions">Sessions</label><input id="cpm-rpm-cpc-calculator-sessions" name="sessions" type="number" value="260000" data-def="260000" min="0" step="any"></div>
+<p class="calc-note">Nothing you type is sent anywhere. Everything runs in your browser.</p>
+</div>
+<div class="calc-output" data-out></div>
+</div>
+</div>
+<!-- ad slot: tool_result (leaderboard) — set ADS['publisher'] in _src/config.py -->
+</div>
+</section>
+<section class="band" style="padding-top:0">
+<div class="wrap article-layout">
+<article class="prose">
+<h2 id="formula">Every formula on one screen</h2><div class="code">CPM  = (spend ÷ impressions) × 1000
+RPM  = (revenue ÷ pageviews) × 1000
+CPC  = spend ÷ clicks
+CTR  = (clicks ÷ impressions) × 100
+CPA  = spend ÷ conversions
+ROAS = revenue ÷ spend
+RPS  = revenue ÷ sessions</div><h2 id="difference">CPM versus RPM, once and for all</h2>
+<p><strong>CPM</strong> is what an advertiser pays per thousand <em>ad impressions</em>. <strong>RPM</strong>
+is what a publisher earns per thousand <em>pageviews</em>. They are different denominators. A page
+carrying three ad units at a $12 CPM produces roughly a $36 page RPM at 100% fill — which is why
+comparing your RPM to someone else's CPM tells you nothing.</p>
+<h2 id="benchmarks">Display RPM benchmarks by category</h2>
+<table>
+<thead><tr><th>Category</th><th>Page RPM, tier-1 traffic</th></tr></thead>
+<tbody>
+<tr><td>Finance &amp; insurance</td><td>$28 – $60</td></tr>
+<tr><td>B2B software / SaaS</td><td>$26 – $62</td></tr>
+<tr><td>Technology</td><td>$20 – $44</td></tr>
+<tr><td>Marketing &amp; business</td><td>$18 – $42</td></tr>
+<tr><td>Health</td><td>$14 – $34</td></tr>
+<tr><td>Education</td><td>$9 – $20</td></tr>
+<tr><td>General / lifestyle</td><td>$5 – $12</td></tr>
+<tr><td>Entertainment</td><td>$3 – $9</td></tr>
+</tbody></table>
+<p>These assume a tier-1 traffic mix. At 30% US traffic, expect roughly a third of these figures.
+A realistic expectation for a new marketing site with mixed geography is $8–$20 page RPM, not the
+headline numbers you see quoted in case studies.</p>
+<h2 id="lever">The cheapest revenue lever you have</h2>
+<p>Pages per session is in the result for a reason. Raising it from 1.2 to 1.8 raises revenue per
+session by 50% with no new traffic and no new ad units. Internal linking, a "most read" module and
+a related-tools strip at the end of every page are the three highest-return changes on any
+content site.</p>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+<section class="faq" id="faq"><h2>Frequently asked questions</h2><div class="faq-list"><details class="faq-item" open><summary><span>What is a good CTR for display advertising?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>0.05%–0.15% for standard display. Native and in-feed placements run 0.3%–1.0%. Search ads are a different universe at 2%–6%. If your display CTR is above 1%, check for accidental clicks — that is a policy risk, not a win.</p></div></details><details class="faq-item"><summary><span>What ROAS should I target?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Break-even depends on margin. At a 50% gross margin, 2.0× ROAS is break-even and 3.0×+ is healthy. E-commerce with thin margins often needs 4×–6×. For a subscription product, judge on payback period against LTV instead.</p></div></details><details class="faq-item"><summary><span>How do I increase page RPM without more traffic?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Three levers, in order of return: raise pages per session with internal linking; shift traffic mix toward tier-1 countries by targeting higher-value search terms; and add a high-viewability in-content unit above the fold. Adding more ad units below the fold is the worst of the options and risks a policy strike.</p></div></details><details class="faq-item"><summary><span>Why is my RPM lower on mobile?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>Fewer viewable units, lower average viewability, and a heavier share of low-intent social traffic. A 30–45% gap between desktop and mobile RPM is normal.</p></div></details></div><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a good CTR for display advertising?","acceptedAnswer":{"@type":"Answer","text":"0.05%\u20130.15% for standard display. Native and in-feed placements run 0.3%\u20131.0%. Search ads are a different universe at 2%\u20136%. If your display CTR is above 1%, check for accidental clicks \u2014 that is a policy risk, not a win."}},{"@type":"Question","name":"What ROAS should I target?","acceptedAnswer":{"@type":"Answer","text":"Break-even depends on margin. At a 50% gross margin, 2.0\u00d7 ROAS is break-even and 3.0\u00d7+ is healthy. E-commerce with thin margins often needs 4\u00d7\u20136\u00d7. For a subscription product, judge on payback period against LTV instead."}},{"@type":"Question","name":"How do I increase page RPM without more traffic?","acceptedAnswer":{"@type":"Answer","text":"Three levers, in order of return: raise pages per session with internal linking; shift traffic mix toward tier-1 countries by targeting higher-value search terms; and add a high-viewability in-content unit above the fold. Adding more ad units below the fold is the worst of the options and risks a policy strike."}},{"@type":"Question","name":"Why is my RPM lower on mobile?","acceptedAnswer":{"@type":"Answer","text":"Fewer viewable units, lower average viewability, and a heavier share of low-intent social traffic. A 30\u201345% gap between desktop and mobile RPM is normal."}}]}</script></section>
+<div class="poll" data-poll="cpm-rpm-cpc-calculator">
+<span>Did this page solve your problem?</span>
+<div class="poll-btns">
+<button type="button" data-v="yes">Yes</button>
+<button type="button" data-v="no">No</button>
+</div>
+<p class="poll-thanks" hidden>Thanks — noted. <a href="/contact/">Tell us what was missing</a>.</p>
+</div>
+</article>
+<aside class="sidebar">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#formula">The formula</a></li><li><a href="#difference">CPM versus RPM, once and for all</a></li><li><a href="#benchmarks">Display RPM benchmarks by category</a></li><li><a href="#lever">The cheapest revenue lever you have</a></li></ul></nav>
+<!-- ad slot: sidebar (sidebar) — set ADS['publisher'] in _src/config.py -->
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Want this done for you?</h3>
+<p class="small muted">We build and run content programmes using these exact models.</p>
+<a class="btn btn--primary btn--block" href="/services/#quote">Get a costed plan</a>
+</div>
+<div class="panel panel--compact">
+<h3 style="font-size:1rem">Free weekly brief</h3>
+<p class="small muted">Benchmark changes and payout shifts, every Tuesday.</p>
+<form class="cm-form" data-form="newsletter">
+<input name="email" type="email" required placeholder="you@company.com">
+<button class="btn btn--primary btn--block" type="submit" style="margin-top:.5rem">Subscribe</button>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</div>
+</aside>
+</div>
+</section>
+<section class="band band--alt">
+<div class="wrap">
+<section class="band" style="padding-top:1rem">
+<h2>Related calculators</h2>
+<div class="tool-strip"><a href="/tools/youtube-money-calculator/"><span class="n">1</span>YouTube money calculator</a><a href="/tools/youtube-shorts-rpm-calculator/"><span class="n">2</span>YouTube Shorts RPM calculator</a><a href="/tools/tiktok-earnings-calculator/"><span class="n">3</span>TikTok earnings calculator</a><a href="/tools/instagram-engagement-calculator/"><span class="n">4</span>Instagram engagement rate & rate calculator</a><a href="/tools/creator-rate-card-calculator/"><span class="n">5</span>Creator rate card builder</a><a href="/tools/podcast-sponsorship-calculator/"><span class="n">6</span>Podcast sponsorship calculator</a></div>
+</section>
+<section class="newsletter newsletter--narrow" id="newsletter">
+<div class="newsletter__copy">
+<span class="eyebrow">Free weekly</span>
+<h2>The weekly Content.Media brief</h2>
+<p>Benchmarks, rate changes and platform payout shifts — decoded in five minutes. Read by creators, publishers and brand marketers. One email a week, unsubscribe in one click.</p>
+<ul class="magnet-list"><li>The <strong>2026 benchmark dataset</strong> as a CSV — <a href="/assets/data/creator-benchmarks-2026.csv" download>download it now, no signup</a></li><li>Every back issue, from the first one</li><li>Reader discount codes when tools offer them</li><li>First look at contests and prize drops</li></ul>
+</div>
+<form class="cm-form newsletter__form" data-form="newsletter" novalidate>
+<label class="sr-only" for="nl-email-narrow">Email address</label>
+<input id="nl-email-narrow" name="email" type="email" required
+placeholder="you@company.com" autocomplete="email">
+<label class="sr-only" for="nl-role-narrow">I am a…</label>
+<select id="nl-role-narrow" name="role" required>
+<option value="">I am a…</option>
+<option>Creator / channel owner</option>
+<option>Publisher / media owner</option>
+<option>Brand or in-house marketer</option>
+<option>Agency / freelancer</option>
+<option>Investor / analyst</option>
+</select>
+<button class="btn btn--primary btn--block" type="submit">Send me the brief</button>
+<label class="checkline">
+<input type="checkbox" name="consent" value="yes" required>
+<span>Email me the weekly brief and the rate card database. I can unsubscribe any time.</span>
+</label>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</section>
+</div>
+</section>
+<section class="cta-band">
+<div class="wrap cta-band__inner">
+<div>
+<h2>Numbers are the easy part. Shipping the content is the hard part.</h2>
+<p>Hand us the programme and we will build it, staff it and run it.</p>
+</div>
+<div class="cta-band__actions">
+<a class="btn btn--primary btn--lg" href="/services/#quote">Get my content plan</a>
+<a class="btn btn--ghost btn--lg" href="/services/#pricing">See what we charge</a>
+</div>
+</div>
+</section>{% endraw %}
