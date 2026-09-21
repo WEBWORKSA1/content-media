@@ -1,0 +1,6 @@
+# GitHub Pages builds this site with Jekyll automatically.
+# Every page shares _layouts/default.html (header, footer, domain bar).
+title: Content.Media
+url: "https://content.media"
+baseurl: "/content-media"   # set to "" once content.media points at GitHub Pages
+exclude: [README.md, BUILD-PLAN.md, build.py, _src, node_modules, package.json, package-lock.json]
