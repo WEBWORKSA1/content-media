@@ -1,62 +1,62 @@
-section,item,low,high,unit,notes\r
-youtube_rpm_by_niche,Personal finance & investing,15.0,38.0,USD per 1000 monetised views,advertiser CPM 28-70\r
-youtube_rpm_by_niche,B2B software & SaaS,14.0,34.0,USD per 1000 monetised views,advertiser CPM 26-64\r
-youtube_rpm_by_niche,Real estate & mortgage,12.0,45.0,USD per 1000 monetised views,advertiser CPM 24-84\r
-youtube_rpm_by_niche,Marketing & business,10.0,26.0,USD per 1000 monetised views,advertiser CPM 20-48\r
-youtube_rpm_by_niche,Technology & gadget reviews,8.0,22.0,USD per 1000 monetised views,advertiser CPM 16-42\r
-youtube_rpm_by_niche,Education & how-to,5.0,14.0,USD per 1000 monetised views,advertiser CPM 10-26\r
-youtube_rpm_by_niche,"Health, fitness & wellness",4.0,12.0,USD per 1000 monetised views,advertiser CPM 8-23\r
-youtube_rpm_by_niche,Travel,4.0,11.0,USD per 1000 monetised views,advertiser CPM 8-21\r
-youtube_rpm_by_niche,Food & cooking,3.5,9.0,USD per 1000 monetised views,advertiser CPM 7-17\r
-youtube_rpm_by_niche,Beauty & fashion,3.5,10.0,USD per 1000 monetised views,advertiser CPM 7-19\r
-youtube_rpm_by_niche,Entertainment & vlogs,1.5,6.0,USD per 1000 monetised views,advertiser CPM 3-12\r
-youtube_rpm_by_niche,Gaming,1.2,5.5,USD per 1000 monetised views,advertiser CPM 3-11\r
-youtube_rpm_by_niche,Kids & family,1.0,4.0,USD per 1000 monetised views,advertiser CPM 2-8\r
-youtube_rpm_by_niche,Music,1.0,3.5,USD per 1000 monetised views,advertiser CPM 2-7\r
-geography_multiplier,Mostly United States,1.0,1.0,multiplier,\r
-geography_multiplier,Mixed tier-1 (US/UK/CA/AU),0.86,0.86,multiplier,\r
-geography_multiplier,Mostly Western Europe,0.72,0.72,multiplier,\r
-geography_multiplier,Global mix,0.48,0.48,multiplier,\r
-geography_multiplier,Mostly South Asia / SEA / LATAM,0.22,0.22,multiplier,\r
-engagement_rate_band,Instagram nano <1K,6.5,8.5,percent,\r
-engagement_rate_band,Instagram 1K-5K,4.8,6.4,percent,\r
-engagement_rate_band,Instagram 5K-10K,3.4,4.6,percent,\r
-engagement_rate_band,Instagram 10K-100K,2.0,3.2,percent,\r
-engagement_rate_band,Instagram 100K-1M,1.4,2.2,percent,\r
-engagement_rate_band,Instagram 1M+,1.0,1.7,percent,\r
-engagement_rate_band,TikTok <5K,12.0,18.0,percent,\r
-engagement_rate_band,TikTok 5K-10K,10.5,15.0,percent,\r
-engagement_rate_band,TikTok 10K-50K,9.0,13.5,percent,\r
-engagement_rate_band,TikTok 50K-100K,8.0,12.0,percent,\r
-engagement_rate_band,TikTok 100K-1M,7.0,11.0,percent,\r
-engagement_rate_band,TikTok 1M+,6.0,10.5,percent,\r
-sponsorship_rate_anchor,Instagram Reel,12,30,USD per 1000 followers,\r
-sponsorship_rate_anchor,Instagram in-feed post,8,20,USD per 1000 followers,\r
-sponsorship_rate_anchor,Instagram Story frame,4,10,USD per 1000 followers,\r
-sponsorship_rate_anchor,TikTok video,10,26,USD per 1000 followers,\r
-sponsorship_rate_anchor,YouTube integration,18,55,USD per 1000 followers,\r
-sponsorship_rate_anchor,YouTube dedicated video,30,90,USD per 1000 followers,\r
-sponsorship_rate_anchor,YouTube Short,8,22,USD per 1000 followers,\r
-sponsorship_rate_anchor,X post,3,10,USD per 1000 followers,\r
-sponsorship_rate_anchor,LinkedIn post,15,45,USD per 1000 followers,\r
-sponsorship_rate_anchor,Newsletter primary slot,25,90,USD per 1000 followers,\r
-sponsorship_rate_anchor,Podcast mid-roll,18,50,USD per 1000 followers,\r
-display_page_rpm,Finance & insurance,28,60,USD per 1000 pageviews,tier-1 traffic\r
-display_page_rpm,B2B software / SaaS,26,62,USD per 1000 pageviews,tier-1 traffic\r
-display_page_rpm,Technology,20,44,USD per 1000 pageviews,tier-1 traffic\r
-display_page_rpm,Marketing & business,18,42,USD per 1000 pageviews,tier-1 traffic\r
-display_page_rpm,Health,14,34,USD per 1000 pageviews,tier-1 traffic\r
-display_page_rpm,Education,9,20,USD per 1000 pageviews,tier-1 traffic\r
-display_page_rpm,General / lifestyle,5,12,USD per 1000 pageviews,tier-1 traffic\r
-display_page_rpm,Entertainment,3,9,USD per 1000 pageviews,tier-1 traffic\r
-production_cost,SEO article 1500 words,350,1200,USD,\r
-production_cost,Pillar page 4000 words,1200,4500,USD,\r
-production_cost,Short-form video,150,700,USD,\r
-production_cost,Long-form YouTube video,1500,9000,USD,\r
-production_cost,Podcast episode edited,400,1800,USD,\r
-production_cost,Monthly retainer 12-20 pieces,5000,30000,USD,\r
-funnel_constant,Organic CTR positions 1-3,24,24,percent,\r
-funnel_constant,Organic CTR positions 4-10,6,6,percent,\r
-funnel_constant,Visitor to lead with offer,2.2,2.2,percent,\r
-funnel_constant,Visitor to lead no offer,0.5,0.5,percent,\r
-funnel_constant,Lead to customer B2B,14,14,percent,\r
+section,item,low,high,unit,notes
+youtube_rpm_by_niche,Personal finance & investing,15.0,38.0,USD per 1000 monetised views,advertiser CPM 28-70
+youtube_rpm_by_niche,B2B software & SaaS,14.0,34.0,USD per 1000 monetised views,advertiser CPM 26-64
+youtube_rpm_by_niche,Real estate & mortgage,12.0,45.0,USD per 1000 monetised views,advertiser CPM 24-84
+youtube_rpm_by_niche,Marketing & business,10.0,26.0,USD per 1000 monetised views,advertiser CPM 20-48
+youtube_rpm_by_niche,Technology & gadget reviews,8.0,22.0,USD per 1000 monetised views,advertiser CPM 16-42
+youtube_rpm_by_niche,Education & how-to,5.0,14.0,USD per 1000 monetised views,advertiser CPM 10-26
+youtube_rpm_by_niche,"Health, fitness & wellness",4.0,12.0,USD per 1000 monetised views,advertiser CPM 8-23
+youtube_rpm_by_niche,Travel,4.0,11.0,USD per 1000 monetised views,advertiser CPM 8-21
+youtube_rpm_by_niche,Food & cooking,3.5,9.0,USD per 1000 monetised views,advertiser CPM 7-17
+youtube_rpm_by_niche,Beauty & fashion,3.5,10.0,USD per 1000 monetised views,advertiser CPM 7-19
+youtube_rpm_by_niche,Entertainment & vlogs,1.5,6.0,USD per 1000 monetised views,advertiser CPM 3-12
+youtube_rpm_by_niche,Gaming,1.2,5.5,USD per 1000 monetised views,advertiser CPM 3-11
+youtube_rpm_by_niche,Kids & family,1.0,4.0,USD per 1000 monetised views,advertiser CPM 2-8
+youtube_rpm_by_niche,Music,1.0,3.5,USD per 1000 monetised views,advertiser CPM 2-7
+geography_multiplier,Mostly United States,1.0,1.0,multiplier,
+geography_multiplier,Mixed tier-1 (US/UK/CA/AU),0.86,0.86,multiplier,
+geography_multiplier,Mostly Western Europe,0.72,0.72,multiplier,
+geography_multiplier,Global mix,0.48,0.48,multiplier,
+geography_multiplier,Mostly South Asia / SEA / LATAM,0.22,0.22,multiplier,
+engagement_rate_band,Instagram nano <1K,6.5,8.5,percent,
+engagement_rate_band,Instagram 1K-5K,4.8,6.4,percent,
+engagement_rate_band,Instagram 5K-10K,3.4,4.6,percent,
+engagement_rate_band,Instagram 10K-100K,2.0,3.2,percent,
+engagement_rate_band,Instagram 100K-1M,1.4,2.2,percent,
+engagement_rate_band,Instagram 1M+,1.0,1.7,percent,
+engagement_rate_band,TikTok <5K,12.0,18.0,percent,
+engagement_rate_band,TikTok 5K-10K,10.5,15.0,percent,
+engagement_rate_band,TikTok 10K-50K,9.0,13.5,percent,
+engagement_rate_band,TikTok 50K-100K,8.0,12.0,percent,
+engagement_rate_band,TikTok 100K-1M,7.0,11.0,percent,
+engagement_rate_band,TikTok 1M+,6.0,10.5,percent,
+sponsorship_rate_anchor,Instagram Reel,12,30,USD per 1000 followers,
+sponsorship_rate_anchor,Instagram in-feed post,8,20,USD per 1000 followers,
+sponsorship_rate_anchor,Instagram Story frame,4,10,USD per 1000 followers,
+sponsorship_rate_anchor,TikTok video,10,26,USD per 1000 followers,
+sponsorship_rate_anchor,YouTube integration,18,55,USD per 1000 followers,
+sponsorship_rate_anchor,YouTube dedicated video,30,90,USD per 1000 followers,
+sponsorship_rate_anchor,YouTube Short,8,22,USD per 1000 followers,
+sponsorship_rate_anchor,X post,3,10,USD per 1000 followers,
+sponsorship_rate_anchor,LinkedIn post,15,45,USD per 1000 followers,
+sponsorship_rate_anchor,Newsletter primary slot,25,90,USD per 1000 followers,
+sponsorship_rate_anchor,Podcast mid-roll,18,50,USD per 1000 followers,
+display_page_rpm,Finance & insurance,28,60,USD per 1000 pageviews,tier-1 traffic
+display_page_rpm,B2B software / SaaS,26,62,USD per 1000 pageviews,tier-1 traffic
+display_page_rpm,Technology,20,44,USD per 1000 pageviews,tier-1 traffic
+display_page_rpm,Marketing & business,18,42,USD per 1000 pageviews,tier-1 traffic
+display_page_rpm,Health,14,34,USD per 1000 pageviews,tier-1 traffic
+display_page_rpm,Education,9,20,USD per 1000 pageviews,tier-1 traffic
+display_page_rpm,General / lifestyle,5,12,USD per 1000 pageviews,tier-1 traffic
+display_page_rpm,Entertainment,3,9,USD per 1000 pageviews,tier-1 traffic
+production_cost,SEO article 1500 words,350,1200,USD,
+production_cost,Pillar page 4000 words,1200,4500,USD,
+production_cost,Short-form video,150,700,USD,
+production_cost,Long-form YouTube video,1500,9000,USD,
+production_cost,Podcast episode edited,400,1800,USD,
+production_cost,Monthly retainer 12-20 pieces,5000,30000,USD,
+funnel_constant,Organic CTR positions 1-3,24,24,percent,
+funnel_constant,Organic CTR positions 4-10,6,6,percent,
+funnel_constant,Visitor to lead with offer,2.2,2.2,percent,
+funnel_constant,Visitor to lead no offer,0.5,0.5,percent,
+funnel_constant,Lead to customer B2B,14,14,percent,
