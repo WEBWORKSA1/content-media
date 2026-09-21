@@ -1,0 +1,105 @@
+---
+layout: "default"
+title: "Content & AI Tool Directory — Honestly Reviewed Tools | Content.Media"
+description: "Filter content and AI tools by category, pricing, modality and platform. Every listing carries an honest editor note."
+canonical: "/directory/"
+head_extra: ""
+body_extra: ""
+---
+{% raw %}<section class="band" style="padding-bottom:1.2rem">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page"><span>Tool directory</span></li></ol></nav><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://content.media/"},{"@type":"ListItem","position":2,"name":"Tool directory","item":"https://content.media/directory/"}]}</script>
+<h1>The content &amp; AI tool directory</h1>
+<p class="lede">Every listing carries an editor note that says what the tool is actually bad at.
+Nobody can buy a rating, an editor score or a ranking — featured slots are labelled as featured
+everywhere they appear. Some outbound links are affiliate links;
+see our <a href="/disclosure/">disclosure</a>.</p>
+<!-- ad slot: leaderboard (leaderboard) — set ADS['publisher'] in _src/config.py -->
+</div>
+</section>
+<section class="band" style="padding-top:0">
+<div class="wrap dir-layout" id="dirApp">
+<aside>
+<div class="filters">
+<div class="dir-toolbar" style="margin-bottom:.8rem">
+<button class="chip" id="dirClear" type="button">Clear all filters</button>
+</div>
+<div id="dirFacets"></div>
+</div>
+</aside>
+<div>
+<div class="dir-toolbar">
+<input type="search" id="dirSearch" placeholder="Search the directory — try “captions” or “analytics”…"
+aria-label="Search the directory">
+<select id="dirSort" aria-label="Sort results">
+<option value="trending">Sort: Trending</option>
+<option value="popular">Most popular</option>
+<option value="rated">Highest rated</option>
+<option value="editor">Editor score</option>
+<option value="newest">Newest</option>
+<option value="price">Price: low to high</option>
+<option value="az">A–Z</option>
+</select>
+<span id="dirCount" class="small muted"></span>
+<a class="btn btn--primary" href="/directory/submit/">Submit a tool</a>
+</div>
+<div class="dir-grid" id="dirGrid"></div>
+<!-- ad slot: in_article (in-article) — set ADS['publisher'] in _src/config.py -->
+</div>
+</div>
+</section>
+<section class="band band--alt">
+<div class="wrap">
+<div class="sec-head">
+<div><span class="eyebrow">How this directory works</span><h2>Editorially ranked, transparently funded</h2></div>
+</div>
+<div class="grid g3">
+<div class="card"><h3>Manually reviewed</h3><p>Every tool is used or trialled before it is
+listed. The editor note is the point of the listing — anyone can copy a feature list.</p></div>
+<div class="card"><h3>Paid placement is labelled</h3><p>Featured listings are paid and say so
+on every card. Ratings, editor scores and notes are not for sale at any price.</p></div>
+<div class="card"><h3>Affiliate links disclosed</h3><p>Some links earn a commission. They
+never affect placement, and tools with no affiliate programme rank the same.</p></div>
+</div>
+<section class="newsletter newsletter--wide" id="newsletter">
+<div class="newsletter__copy">
+<span class="eyebrow">Free weekly</span>
+<h2>The weekly Content.Media brief</h2>
+<p>Benchmarks, rate changes and platform payout shifts — decoded in five minutes. Read by creators, publishers and brand marketers. One email a week, unsubscribe in one click.</p>
+<ul class="magnet-list"><li>The <strong>2026 benchmark dataset</strong> as a CSV — <a href="/assets/data/creator-benchmarks-2026.csv" download>download it now, no signup</a></li><li>Every back issue, from the first one</li><li>Reader discount codes when tools offer them</li><li>First look at contests and prize drops</li></ul>
+</div>
+<form class="cm-form newsletter__form" data-form="newsletter" novalidate>
+<label class="sr-only" for="nl-email-wide">Email address</label>
+<input id="nl-email-wide" name="email" type="email" required
+placeholder="you@company.com" autocomplete="email">
+<label class="sr-only" for="nl-role-wide">I am a…</label>
+<select id="nl-role-wide" name="role" required>
+<option value="">I am a…</option>
+<option>Creator / channel owner</option>
+<option>Publisher / media owner</option>
+<option>Brand or in-house marketer</option>
+<option>Agency / freelancer</option>
+<option>Investor / analyst</option>
+</select>
+<button class="btn btn--primary btn--block" type="submit">Send me the brief</button>
+<label class="checkline">
+<input type="checkbox" name="consent" value="yes" required>
+<span>Email me the weekly brief and the rate card database. I can unsubscribe any time.</span>
+</label>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</section>
+</div>
+</section>
+<section class="cta-band">
+<div class="wrap cta-band__inner">
+<div>
+<h2>Built the tool? Get it in front of the people who buy tools.</h2>
+<p>Featured listings from $79, sponsored category placement from $299 a month.</p>
+</div>
+<div class="cta-band__actions">
+<a class="btn btn--primary btn--lg" href="/directory/submit/">Submit your tool</a>
+<a class="btn btn--ghost btn--lg" href="/advertise/">See the media kit</a>
+</div>
+</div>
+</section>{% endraw %}
